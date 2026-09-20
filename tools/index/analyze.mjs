@@ -1,6 +1,7 @@
 import sharp from "sharp"
 import { openDb, setMeta } from "../../lib/db.mjs"
 import { assetFile, requireAssetsRoot } from "../../lib/config.mjs"
+import { pool } from "../../lib/concurrency.mjs"
 
 /**
  * Tier 1: structural analysis from real decoded pixels.
@@ -135,14 +136,6 @@ export async function analyzeFile(file) {
     symmetry_score: sN ? Math.round((sM / sN) * 1000) / 1000 : 0,
     style,
   }
-}
-
-async function pool(items, limit, fn) {
-  let i = 0
-  const workers = Array.from({ length: Math.min(limit, items.length) }, async () => {
-    while (i < items.length) await fn(items[i++])
-  })
-  await Promise.all(workers)
 }
 
 export async function analyze({ packs = null, force = false, concurrency = 12 } = {}) {
