@@ -78,9 +78,74 @@ behavior, not data loss, and anyone starting fresh work in a new worktree
 should do the same (or run `assets build`, which requires the raw corpus,
 kept outside this repo).
 
+## Phase 1 — shipped 2026-09-20
+
+Ported both algorithms staged at `vendor/geometric-connectivity-spec-eb8b72/`
+onto this repo's real SQLite + `sharp` architecture, per `KICKOFF.md` §4
+Phase 1. Landed as 5 checkpointed commits: schema/migration, a shared
+`lib/concurrency.mjs` extraction, the geometry tool, the WFC-adjacency tool,
+this update.
+
+**What shipped:**
+- `assets geometry [--packs a,b] [--force]` — connected-component silhouette
+  extraction (`tools/index/geometry.mjs`), writing `geometry_json` per asset.
+- `assets wfc-adjacency [--packs a,b] [--force]` — WFC tile-edge-adjacency
+  extraction (`tools/index/wfc-adjacency.mjs`), writing the four `wfc_*`
+  socket columns per tile and populating the new `wfc_adjacency(pack,
+  direction, tile_a, tile_b)` table.
+- Both algorithms are logically unchanged from the vendor source. The only
+  code changes were the I/O layer (sharp instead of the vendor's hand-rolled
+  `decodePNG()`, SQLite instead of a JSON manifest) and making
+  `computeGroupWFCData` async, since sharp decodes asynchronously and the
+  vendor's decoder didn't.
+
+**Oracle, per KICKOFF's own framing ("must pass, not a status message")**:
+both fixture suites ported with zero logic changes (import path only) —
+`tools/index/test-geometry.mjs` 7/7 pass, `tools/index/test-wfc-adjacency.mjs`
+8/8 pass.
+
+**Real-data verification** (`ASSETS_ROOT` pointed at the sibling
+`UniversalAssetEdgeExtractor` repo's extracted corpus, read-only):
+
+| Check | Original spec doc | This port | Verdict |
+|---|---|---|---|
+| Geometry: files with `componentCount > 1` (pixel-platformer + pixel-line-platformer) | 7 | 7 | exact match |
+| Geometry: `MAX_OUTLINE_VERTICES` overflow on the 180-component tilemap sheet | 126 verts | 126 verts | exact match |
+| WFC: tile counts per group | 180 / 24 / 60 (264 total) | 180 / 24 / 60 (264 total) | exact match |
+| WFC: adjacency pairs | "8,301" cited in the spec doc | 2,546 stored | **investigated, see below** |
+
+The pair-count line looked like a real discrepancy, not a rounding
+difference, so it was checked rather than waved off: recomputing directly
+from this port's own stored socket data, the *pre*-transparent-exclusion
+pair count is exactly 8,301 (confirms this port's pixel decoding is
+bit-identical to the vendor decoder — that's what makes a derived count
+match exactly) and the *post*-exclusion count — what the tool actually
+stores, per the transparent-edge fix the spec doc itself documents — is
+2,546. The spec doc's "8,301" was the pre-fix number from its initial
+2-pack validation run; the fix was verified afterward only at full-catalog
+scale (43 packs) and the 2-pack figure was never restated. 2,546 is the
+correct, expected output of a correctly-fixed implementation, not a bug in
+this port.
+
+**Regression check**: `assets eval` unchanged at 94.4% recall@10 after the
+schema migration; `assets search` returns the same real hits as before.
+
+**Deviations from the plan**: none of substance. The async-ification of
+`computeGroupWFCData` (noted above) wasn't anticipated in the original
+`KICKOFF.md` phase description but is a mechanical consequence of using
+`sharp`, not a design change, and isn't exercised by the ported test suite.
+
+**Not done in this pass** (by design, out of scope for Phase 1): a full
+223-pack/61k-file production run of either tool — verification was scoped to
+the two packs the original spec doc itself measured, which gave a stronger,
+falsifiable oracle than an unverified full-catalog run would have. Running
+`assets geometry`/`assets wfc-adjacency` catalog-wide is a natural fast
+follow whenever it's wanted; both commands are idempotent (skip
+already-processed rows/packs unless `--force`) so it can be done incrementally.
+
 ## Open work
 
-See `KICKOFF.md` §4 for the phase breakdown (geometry/WFC adjacency →
-reconciliation tier → kit-connector schema → retire superseded artifacts).
-This file will be updated as each phase lands with what actually shipped,
-including any deviation from the plan and why.
+See `KICKOFF.md` §4 for the phase breakdown (geometry/WFC adjacency [done,
+above] → reconciliation tier → kit-connector schema → retire superseded
+artifacts). This file will be updated as each phase lands with what actually
+shipped, including any deviation from the plan and why.
