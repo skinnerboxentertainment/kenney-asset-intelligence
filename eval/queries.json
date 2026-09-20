@@ -1,0 +1,2927 @@
+{
+  "_doc": [
+    "Retrieval oracle. Each case is a query a game-builder would actually type,",
+    "plus the set of assets that would be a correct answer.",
+    "",
+    "Expectations are path globs over 'pack:path', derived from the corpus's own",
+    "naming -- objective facts a human can check by listing files -- never from",
+    "this index's ranking, which would make the eval circular.",
+    "'*' matches any characters including '/'. A case passes at k if any returned",
+    "asset in the top k matches any expect pattern.",
+    "",
+    "Metric: recall@10. Run: assets eval",
+    "",
+    "Two kinds of case:",
+    "  lexical  - the answer's filename contains the query words. Filename",
+    "             matching wins these by construction; they check the index",
+    "             does not regress, not that enrichment helps.",
+    "  semantic - scoped to 1-bit-platformer, whose files are named tile_0000",
+    "             .. tile_0195 and carry no meaning at all. No amount of",
+    "             filename matching can answer these. Labels were established",
+    "             by rendering a contact sheet and looking at it, then",
+    "             cross-checking against the independently-produced legacy",
+    "             descriptions; only cases where both agreed were kept.",
+    "",
+    "Ground truth is widened only after rendering the candidate and confirming",
+    "by eye that it answers the query. A lexical case's expectations were first",
+    "written when only filename-matched assets could be found; as opaque-named",
+    "assets gain descriptions they legitimately outrank those, and the suite has",
+    "to learn the new correct answers rather than score them as failures.",
+    "Never widen an expectation to make a number look better.",
+    "",
+    "2026-09-06: widened from 69 to ~304 cases. Three kinds now:",
+    "  lexical  - filename says it; spread across ~50 packs the old suite never touched",
+    "  semantic - opaque filenames; ground truth is a description that was AUDITED",
+    "             against the pixels (assets.audited=1), from four packs",
+    "  intent   - a sentence a builder would actually type, with permissive but",
+    "             honest expectations. These are the shape of real queries and the",
+    "             old suite had none.",
+    "All still authored by the same mind that wrote the descriptions; a third",
+    "written by someone else remains the outstanding gap."
+  ],
+  "cases": [
+    {
+      "q": "player walk cycle frames",
+      "role": "character",
+      "expect": [
+        "*:*player*walk*",
+        "*:*character*walk*",
+        "*:*hero*walk*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "character idle standing pose",
+      "role": "character",
+      "expect": [
+        "*:*idle*",
+        "*:*stand*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "player jump sprite",
+      "role": "character",
+      "expect": [
+        "*:*player*jump*",
+        "*:*character*jump*",
+        "*:*bunny*jump*",
+        "*:*jump*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "character climbing ladder frames",
+      "expect": [
+        "*:*climb*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "player duck crouch sprite",
+      "expect": [
+        "*:*duck*",
+        "*:*crouch*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "character hurt hit damaged",
+      "expect": [
+        "*:*hurt*",
+        "*:*hit*",
+        "*:*damage*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "front facing character portrait",
+      "role": "character",
+      "expect": [
+        "*:*character*",
+        "*:*player*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "pixel art character sprite",
+      "role": "character",
+      "style": "pixel-art",
+      "expect": [
+        "*:*character*",
+        "*:*player*",
+        "*:*alien*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "seamless grass ground tile",
+      "role": "tile",
+      "expect": [
+        "*:*grass*",
+        "*:*terrain*grass*",
+        "*:*ground*grass*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "dirt terrain block",
+      "role": "tile",
+      "expect": [
+        "*:*dirt*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "stone brick wall tile",
+      "expect": [
+        "*:*stone*",
+        "*:*brick*",
+        "*:*wall*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "sand desert tile",
+      "expect": [
+        "*:*sand*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "snow ice tile",
+      "expect": [
+        "*:*snow*",
+        "*:*ice*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "wooden platform plank",
+      "expect": [
+        "*:*wood*",
+        "*:*plank*",
+        "*:*platform*",
+        "*:*bridge*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "ladder tile climbable",
+      "expect": [
+        "*:*ladder*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "bridge segment tile",
+      "expect": [
+        "*:*bridge*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "water liquid tile",
+      "expect": [
+        "*:*water*",
+        "*:*liquid*",
+        "platformer-art-pixel:Tiles/tile_0040.png",
+        "platformer-art-pixel:Tiles/tile_0549.png"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "lava molten hazard tile",
+      "expect": [
+        "*:*lava*",
+        "*:*magma*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "tileable repeating texture",
+      "tileable": true,
+      "expect": [
+        "*:*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "sky background with clouds",
+      "role": "background",
+      "expect": [
+        "*:*cloud*",
+        "*:*sky*",
+        "*:*background*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "parallax mountain hills backdrop",
+      "expect": [
+        "*:*mountain*",
+        "*:*hill*",
+        "*:*background*",
+        "*:*parallax*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "solid colour background layer",
+      "role": "background",
+      "expect": [
+        "*:*background*",
+        "*:*bg*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "gold coin pickup",
+      "expect": [
+        "*:*coin*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "gem crystal collectible",
+      "expect": [
+        "*:*gem*",
+        "*:*crystal*",
+        "*:*diamond*",
+        "platformer-art-pixel:Tiles/tile_0376.png",
+        "platformer-art-pixel:Tiles/tile_0377.png"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "key item to unlock door",
+      "expect": [
+        "*:*key*",
+        "platformer-art-pixel:Tiles/tile_0014.png",
+        "platformer-art-pixel:Tiles/tile_0015.png"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "heart health pickup",
+      "expect": [
+        "*:*heart*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "star collectible",
+      "expect": [
+        "*:*star*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "treasure chest",
+      "expect": [
+        "*:*chest*",
+        "*:*treasure*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "slime blob enemy",
+      "expect": [
+        "*:*slime*",
+        "*:*blob*",
+        "platformer-art-pixel:Tiles/tile_0259.png",
+        "platformer-art-pixel:Tiles/tile_0260.png"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "flying enemy sprite",
+      "expect": [
+        "*:*fly*",
+        "*:*bat*",
+        "*:*bee*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "spiky enemy creature",
+      "expect": [
+        "*:*spike*",
+        "*:*spikey*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "worm crawling enemy",
+      "expect": [
+        "*:*worm*",
+        "*:*snake*",
+        "*:*caterpillar*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "boss monster large enemy",
+      "role": "enemy",
+      "expect": [
+        "*:*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "spikes hazard trap",
+      "expect": [
+        "*:*spike*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "saw blade trap",
+      "expect": [
+        "*:*saw*",
+        "*:*blade*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "exit door for level end",
+      "expect": [
+        "*:*door*",
+        "*:*exit*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "wooden crate box prop",
+      "expect": [
+        "*:*crate*",
+        "*:*box*",
+        "platformer-art-pixel:Tiles/tile_0043.png",
+        "platformer-art-pixel:Tiles/tile_0190.png"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "sign post",
+      "expect": [
+        "*:*sign*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "checkpoint flag",
+      "expect": [
+        "*:*flag*",
+        "*:*checkpoint*",
+        "platformer-art-pixel:Tiles/tile_0310.png",
+        "platformer-art-pixel:Tiles/tile_0311.png",
+        "platformer-art-pixel:Tiles/tile_0312.png"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "ui button rounded",
+      "role": "ui",
+      "expect": [
+        "*:*button*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "ui panel window frame",
+      "role": "ui",
+      "expect": [
+        "*:*panel*",
+        "*:*window*",
+        "*:*frame*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "health bar progress meter",
+      "expect": [
+        "*:*bar*",
+        "*:*health*",
+        "*:*progress*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "checkbox toggle control",
+      "expect": [
+        "*:*check*",
+        "*:*toggle*",
+        "*:*tick*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "slider control",
+      "expect": [
+        "*:*slider*",
+        "*:*bar*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "crosshair reticle",
+      "expect": [
+        "*:*crosshair*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "keyboard key prompt icon",
+      "expect": [
+        "*:*keyboard*",
+        "*:*key*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "gamepad controller button prompt",
+      "expect": [
+        "*:*gamepad*",
+        "*:*xbox*",
+        "*:*playstation*",
+        "*:*switch*",
+        "*:*controller*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "arrow direction icon",
+      "expect": [
+        "*:*arrow*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "cursor pointer icon",
+      "expect": [
+        "*:*cursor*",
+        "*:*pointer*",
+        "*:*hand*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "explosion effect frames",
+      "expect": [
+        "*:*explos*",
+        "*:*blast*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "smoke puff particle",
+      "expect": [
+        "*:*smoke*",
+        "*:*puff*",
+        "*:*cloud*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "impact hit spark effect",
+      "expect": [
+        "*:*impact*",
+        "*:*spark*",
+        "*:*hit*",
+        "*:*star*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "gun blaster weapon",
+      "expect": [
+        "*:*gun*",
+        "*:*blaster*",
+        "*:*weapon*",
+        "*:*rifle*",
+        "*:*pistol*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "sword melee weapon",
+      "expect": [
+        "*:*sword*",
+        "*:*blade*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "bullet projectile",
+      "expect": [
+        "*:*bullet*",
+        "*:*projectile*",
+        "*:*laser*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "one bit monochrome tile",
+      "style": "1-bit",
+      "expect": [
+        "*:*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "car vehicle top down",
+      "expect": [
+        "*:*car*",
+        "*:*vehicle*",
+        "*:*tank*",
+        "*:*truck*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "tree foliage plant",
+      "expect": [
+        "*:*tree*",
+        "*:*plant*",
+        "*:*bush*",
+        "*:*foliage*",
+        "*:*leaf*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "cloud sprite",
+      "expect": [
+        "*:*cloud*"
+      ],
+      "kind": "lexical"
+    },
+    {
+      "q": "heart health icon",
+      "pack": "1-bit-platformer",
+      "expect": [
+        "*:*tile_0040*",
+        "*:*tile_0041*",
+        "*:*tile_0042*"
+      ],
+      "kind": "semantic"
+    },
+    {
+      "q": "diagonal slope beam platform",
+      "pack": "1-bit-platformer",
+      "expect": [
+        "*:*tile_0024*",
+        "*:*tile_0025*",
+        "*:*tile_0026*"
+      ],
+      "kind": "semantic"
+    },
+    {
+      "q": "rock boulder cliff mass",
+      "pack": "1-bit-platformer",
+      "expect": [
+        "*:*tile_0014*",
+        "*:*tile_0015*"
+      ],
+      "kind": "semantic"
+    },
+    {
+      "q": "vertical column strip ladder",
+      "pack": "1-bit-platformer",
+      "expect": [
+        "*:*tile_0032*"
+      ],
+      "kind": "semantic"
+    },
+    {
+      "q": "hollow circular ring",
+      "pack": "1-bit-platformer",
+      "expect": [
+        "*:*tile_0020*"
+      ],
+      "kind": "semantic"
+    },
+    {
+      "q": "arched doorway entrance",
+      "pack": "1-bit-platformer",
+      "expect": [
+        "*:*tile_0012*"
+      ],
+      "kind": "semantic"
+    },
+    {
+      "q": "crate box with cross bracing",
+      "pack": "1-bit-platformer",
+      "expect": [
+        "*:*tile_0010*",
+        "*:*tile_0030*"
+      ],
+      "kind": "semantic"
+    },
+    {
+      "q": "small plants sprouts grass",
+      "pack": "1-bit-platformer",
+      "expect": [
+        "*:*tile_0016*",
+        "*:*tile_0017*",
+        "*:*tile_0018*"
+      ],
+      "kind": "semantic"
+    },
+    {
+      "q": "ground platform surface tile",
+      "pack": "1-bit-platformer",
+      "expect": [
+        "*:*tile_0044*",
+        "*:*tile_0045*",
+        "*:*tile_0046*"
+      ],
+      "kind": "semantic"
+    },
+    {
+      "q": "bell shape",
+      "pack": "1-bit-platformer",
+      "expect": [
+        "*:*tile_0033*"
+      ],
+      "kind": "semantic"
+    },
+    {
+      "q": "female adventurer attack animation",
+      "expect": [
+        "toon-characters:*femaleAdventurer_attack*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "robot character cheering",
+      "expect": [
+        "toon-characters:*robot_cheer*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "male person seen from behind",
+      "expect": [
+        "toon-characters:*malePerson_behindBack*",
+        "toon-characters:*malePerson_back*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "kick attack frame",
+      "expect": [
+        "toon-characters:*attackKick*",
+        "platformer-characters:*_kick*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: top hits were correct answers by filename that the original expectation, written from one pack, had not listed"
+    },
+    {
+      "q": "castle background layer",
+      "expect": [
+        "platformer-art-deluxe:*bg_castle*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "pink candy cane top piece",
+      "expect": [
+        "platformer-art-deluxe:*canePinkTop*",
+        "platformer-art-candy:*hillCaneRed*",
+        "*:*canePinkTop*",
+        "platformer-art-pixel:Tiles/tile_0619.png"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06 after looking at a contact sheet of the top 10: these numbered tiles have no name to glob, but the pixels are the thing asked for"
+    },
+    {
+      "q": "stone ledge right edge",
+      "expect": [
+        "platformer-art-deluxe:*stoneLedgeRight*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "snowy tree branches",
+      "expect": [
+        "platformer-art-deluxe:*treeBranchesSnow*",
+        "platformer-art-winter:*treeTopSnow*",
+        "*:*treeBranchesSnow*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: a file whose own name says exactly this was in the top 10 under a pack the expectation had not listed"
+    },
+    {
+      "q": "dead fly enemy",
+      "expect": [
+        "platformer-art-deluxe:*fly_dea*",
+        "platformer-art-extended-enemies:*fly*dead*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "yellow fish swimming",
+      "expect": [
+        "new-platformer-pack:*fish_yellow_swim*",
+        "new-platformer-pack:*fish_yellow*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "log bridge",
+      "expect": [
+        "new-platformer-pack:*bridge_logs*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "lava surface top",
+      "expect": [
+        "new-platformer-pack:*lava_top*",
+        "platformer-art-pixel:Tiles/tile_0012.png"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "sand terrain overhang",
+      "expect": [
+        "new-platformer-pack:*terrain_sand*overhang*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "glossy round progress bar",
+      "expect": [
+        "ui-pack-sci-fi:*bar_round_gloss*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "sci-fi square button with header",
+      "expect": [
+        "ui-pack-sci-fi:*button_square_header*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "decorative arrow pointing south",
+      "expect": [
+        "ui-pack:*arrow_decorative_s*",
+        "*:*arrow_decorative_s*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: top hits were correct answers by filename that the original expectation, written from one pack, had not listed"
+    },
+    {
+      "q": "gradient rectangle button",
+      "expect": [
+        "ui-pack:*button_rectangle_gradient*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "cross close icon",
+      "expect": [
+        "ui-pack:*icon_cross*",
+        "game-icons-expansion:*cross*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "dark up arrow icon",
+      "expect": [
+        "ui-pack:*icon_arrow_up_dark*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "blue card back",
+      "expect": [
+        "boardgame-pack:*cardBack_blue*",
+        "playing-cards-pack:*card_back*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "king of hearts playing card",
+      "expect": [
+        "boardgame-pack:*cardHeartsK*",
+        "playing-cards-pack:*hearts_K*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "red die",
+      "expect": [
+        "boardgame-pack:*dieRed*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "blue game piece",
+      "expect": [
+        "boardgame-pack:*pieceBlue*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "angry face emote",
+      "expect": [
+        "emotes-pack:*faceAngry*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "broken heart emote",
+      "expect": [
+        "emotes-pack:*heartBroken*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "alert exclamation emote",
+      "expect": [
+        "emotes-pack:*alert*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "gear settings icon",
+      "expect": [
+        "game-icons-expansion:*gear*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "multiplayer icon",
+      "expect": [
+        "game-icons-expansion:*multiplayer*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "zoom out magnifier",
+      "expect": [
+        "game-icons-expansion:*zoomOut*",
+        "*:*zoom_out*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: top hits were correct answers by filename that the original expectation, written from one pack, had not listed"
+    },
+    {
+      "q": "snail enemy",
+      "expect": [
+        "platformer-pack-remastered:*snail*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "beige alien ducking",
+      "expect": [
+        "platformer-pack-remastered:*alienBeige_duck*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "warning crate",
+      "expect": [
+        "platformer-pack-remastered:*boxCrate_warning*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "half planet background",
+      "expect": [
+        "platformer-pack-remastered:*planetHalf*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "bean shaped touch button highlighted",
+      "expect": [
+        "mobile-controls:*button_bean_highlight*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "skull icon",
+      "expect": [
+        "mobile-controls:*icon_skull*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "money icon",
+      "expect": [
+        "mobile-controls:*icon_money*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "high brick with left slope",
+      "expect": [
+        "brick-pack:*brick_high_slope_left*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "church roof beige",
+      "expect": [
+        "sketch-town:*roof_church*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "river end square grass",
+      "expect": [
+        "sketch-town:*grass_riverEnd*",
+        "*:*river-end*",
+        "*:*river_end*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: top hits were correct answers by filename that the original expectation, written from one pack, had not listed"
+    },
+    {
+      "q": "castle centre section",
+      "expect": [
+        "sketch-town:*castle_center*",
+        "*:*castleHalfMid*",
+        "*:*castle_center*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: top hits were correct answers by filename that the original expectation, written from one pack, had not listed"
+    },
+    {
+      "q": "blonde racer in blue",
+      "expect": [
+        "racing-pack:*character_blonde_blue*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "yellow race car",
+      "expect": [
+        "racing-pack:*racer_yellow*",
+        "racing-pack:*car_yellow*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: top hits were correct answers by filename that the original expectation, written from one pack, had not listed"
+    },
+    {
+      "q": "queen of diamonds",
+      "expect": [
+        "playing-cards-pack:*diamonds_Q*",
+        "*:*diamonds_Q*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: top hits were correct answers by filename that the original expectation, written from one pack, had not listed"
+    },
+    {
+      "q": "purple skip card",
+      "expect": [
+        "playing-cards-pack:*purple_skip*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "yellow reverse card",
+      "expect": [
+        "playing-cards-pack:*yellow_reverse*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "three players icon",
+      "expect": [
+        "board-game-info:*players_3*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "snow base high detail",
+      "expect": [
+        "isometric-miniature-bases:*base_snow_high_detail*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "floating snow square",
+      "expect": [
+        "isometric-miniature-bases:*square_snow_float*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "transparent panel border",
+      "expect": [
+        "fantasy-ui-borders:*panel-transparent-border*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "desert dome building",
+      "expect": [
+        "sketch-desert:*dome*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "path splitting through grass",
+      "expect": [
+        "sketch-desert:*grass_pathSplit*",
+        "*:*path-split*",
+        "*:*pathSplit*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: top hits were correct answers by filename that the original expectation, written from one pack, had not listed"
+    },
+    {
+      "q": "yellow jewel",
+      "expect": [
+        "abstract-platformer:*yellowJewel*",
+        "*:*jewel_yellow*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: top hits were correct answers by filename that the original expectation, written from one pack, had not listed"
+    },
+    {
+      "q": "crystal outline",
+      "expect": [
+        "abstract-platformer:*outlineCrystal*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "stone balcony",
+      "expect": [
+        "sketch-town-expansion:*balcony_stone*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "inner cliff corner",
+      "expect": [
+        "sketch-town-expansion:*cliff_cornerInner*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "wooden fence corner",
+      "expect": [
+        "sketch-town-expansion:*fence_woodCorner*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "crop furrow",
+      "expect": [
+        "sketch-town-expansion:*furrow_crop*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "blue rune tile",
+      "expect": [
+        "rune-pack:*runeBlue_tile*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "grey rune outline",
+      "expect": [
+        "rune-pack:*runeGrey_tileOutline*",
+        "rune-pack:*runeGrey*Outline*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: top hits were correct answers by filename that the original expectation, written from one pack, had not listed"
+    },
+    {
+      "q": "round shield item",
+      "expect": [
+        "scribble-platformer:*item_shieldRoun*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "blast effect",
+      "expect": [
+        "scribble-platformer:*effect_blast*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "high fence tile",
+      "expect": [
+        "scribble-platformer:*tile_fenceHigh*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "human running isometric",
+      "expect": [
+        "isometric-miniature-prototype:*Human_*_Run*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "human picking something up",
+      "expect": [
+        "isometric-miniature-prototype:*Human_*_Pickup*",
+        "isometric-miniature-dungeon:*Male_*_Pickup*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "idle male figure dungeon",
+      "expect": [
+        "isometric-miniature-dungeon:*Male_*_Idle*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "zombie arm voxel",
+      "expect": [
+        "voxel-pack:*zombie_arm*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "silver sword",
+      "expect": [
+        "voxel-pack:*sword_silver*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "diamond hoe",
+      "expect": [
+        "voxel-pack:*hoe_diamon*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "barnacle taking a hit",
+      "expect": [
+        "platformer-art-extended-enemies:*barnacle_hit*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "lava snake",
+      "expect": [
+        "platformer-art-extended-enemies:*snakeLava*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "frog hurt",
+      "expect": [
+        "platformer-art-extended-enemies:*frog_hit*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "brick windmill hex",
+      "expect": [
+        "hexagon-pack:*mill_brick*",
+        "hexagon-pack:*windmill*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: top hits were correct answers by filename that the original expectation, written from one pack, had not listed"
+    },
+    {
+      "q": "medieval mine hex tile",
+      "expect": [
+        "hexagon-pack:*medieval_mine*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "sci-fi living quarters hex",
+      "expect": [
+        "hexagon-pack:*scifi_living*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "clockwise arrow",
+      "expect": [
+        "board-game-icons:*arrow_clockwise*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "tap card down",
+      "expect": [
+        "board-game-icons:*card_tap_down*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "flip a card",
+      "expect": [
+        "board-game-icons:*card_flip*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "half dirt block",
+      "expect": [
+        "platformer-art-extended-tileset:*dirtHalf*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "half sand block",
+      "expect": [
+        "platformer-art-extended-tileset:*sandHalf*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "seaweed",
+      "expect": [
+        "fish-pack:*seaweed*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "underwater rock background",
+      "expect": [
+        "fish-pack:*background_rock*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "brown ui button",
+      "expect": [
+        "ui-pack-adventure:*button_brown*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "empty beige checkbox",
+      "expect": [
+        "ui-pack-adventure:*checkbox_beige_empty*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "minimap star icon yellow",
+      "expect": [
+        "ui-pack-adventure:*minimap_icon_star_yellow*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "wing man enemy",
+      "expect": [
+        "jumper-pack:*wingMan*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "snow ground platform",
+      "expect": [
+        "jumper-pack:*ground_snow*",
+        "*:*snowCenter*",
+        "*:*snowHalf*",
+        "*:*snowMid*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: top hits were correct answers by filename that the original expectation, written from one pack, had not listed"
+    },
+    {
+      "q": "wings powerup",
+      "expect": [
+        "jumper-pack:*powerup_wings*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "green particle",
+      "expect": [
+        "jumper-pack:*particle_green*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "vertical red laser",
+      "expect": [
+        "platformer-art-requests:*laserRedVertical*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "metal platform",
+      "expect": [
+        "platformer-art-requests:*metalPlatform*",
+        "*:*metalHalf*",
+        "*:*metalMid*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: top hits were correct answers by filename that the original expectation, written from one pack, had not listed"
+    },
+    {
+      "q": "anemometer weather vane",
+      "expect": [
+        "platformer-art-buildings:*anemometer*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "red roof top left",
+      "expect": [
+        "platformer-art-buildings:*roofRedTopLeft*",
+        "*:*roof_clay_red_top*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: top hits were correct answers by filename that the original expectation, written from one pack, had not listed"
+    },
+    {
+      "q": "dark house alternate",
+      "expect": [
+        "platformer-art-buildings:*houseDarkAlt*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "green star powerup",
+      "expect": [
+        "space-shooter-remastered:*powerupGreen_star*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "green player life icon",
+      "expect": [
+        "space-shooter-remastered:*playerLife*green*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "deep ice water",
+      "expect": [
+        "platformer-art-winter:*iceWaterDeep*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "tundra cliff left",
+      "expect": [
+        "platformer-art-winter:*tundraCliffLeft*",
+        "*:*tundraHalfLeft*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: top hits were correct answers by filename that the original expectation, written from one pack, had not listed"
+    },
+    {
+      "q": "bottom spikes",
+      "expect": [
+        "platformer-art-winter:*spikesBottom*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "cupcake",
+      "expect": [
+        "platformer-art-candy:*cupCake*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "cherry",
+      "expect": [
+        "platformer-art-candy:*cherry*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "cake hill left",
+      "expect": [
+        "platformer-art-candy:*cakeHillLeft*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "autumn hex tile",
+      "expect": [
+        "hexagon-tiles:*tileAutumn*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "water hex tile with shadow",
+      "expect": [
+        "hexagon-tiles:*tileWater_shadow*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "white flower",
+      "expect": [
+        "hexagon-tiles:*flowerWhite*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "platform character climbing",
+      "expect": [
+        "simplified-platformer-pack:*platformChar_climb*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "platform character happy",
+      "expect": [
+        "simplified-platformer-pack:*platformChar_happy*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "rock gate right",
+      "expect": [
+        "hexagon-buildings:*rockGateRight*",
+        "*:*gate-rock*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: top hits were correct answers by filename that the original expectation, written from one pack, had not listed"
+    },
+    {
+      "q": "stone window with blinds",
+      "expect": [
+        "hexagon-buildings:*stoneWindowBlinds*",
+        "*:*wall-window-stone*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: top hits were correct answers by filename that the original expectation, written from one pack, had not listed"
+    },
+    {
+      "q": "busy cursor",
+      "expect": [
+        "cursor-pack:*cursor_busy*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "disabled cursor",
+      "expect": [
+        "cursor-pack:*cursor_disable*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "north west arrow cursor",
+      "expect": [
+        "cursor-pack:*arrow_nw*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "purple dungeon character",
+      "expect": [
+        "scribble-dungeons:*purple_character*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "spear weapon",
+      "expect": [
+        "scribble-dungeons:*weapon_spear*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "bow weapon",
+      "expect": [
+        "scribble-dungeons:*weapon_bow*",
+        "board-game-icons:*bow*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "large blue crosshair",
+      "expect": [
+        "shooting-gallery:*crosshair_blue_large*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "empty bullet icon",
+      "expect": [
+        "shooting-gallery:*icon_bullet_empty*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "wooden stick",
+      "expect": [
+        "shooting-gallery:*stick_woo*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "player skidding",
+      "expect": [
+        "platformer-characters:*player_ski*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "zombie from behind",
+      "expect": [
+        "platformer-characters:*zombie_back*",
+        "*:*zombie_behindBack*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: top hits were correct answers by filename that the original expectation, written from one pack, had not listed"
+    },
+    {
+      "q": "hurt head",
+      "expect": [
+        "platformer-characters:*head_hurt*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "xbox a button prompt",
+      "expect": [
+        "input-prompts:*xbox*button*a*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "keyboard numpad plus key",
+      "expect": [
+        "input-prompts:*keyboard_numpad_plus*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "steam deck left stick",
+      "expect": [
+        "input-prompts:*steamdeck_stick_l*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "empty controller battery",
+      "expect": [
+        "input-prompts:*controller_battery_empty*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "playstation dpad right",
+      "expect": [
+        "input-prompts:*playstation_dpad_right*"
+      ],
+      "kind": "lexical",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "grey battle tank",
+      "expect": [
+        "tiny-battle:Tiles/tile_0098.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "green army tank",
+      "expect": [
+        "tiny-battle:Tiles/tile_0116.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "blue tank",
+      "expect": [
+        "tiny-battle:Tiles/tile_0134.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "red tank unit",
+      "expect": [
+        "tiny-battle:Tiles/tile_0152.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "orange tank",
+      "expect": [
+        "tiny-battle:Tiles/tile_0170.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "submarine",
+      "expect": [
+        "tiny-battle:Tiles/tile_0105.png",
+        "tiny-battle:Tiles/tile_0123.png",
+        "tiny-battle:Tiles/tile_0141.png",
+        "tiny-battle:Tiles/tile_0159.png",
+        "tiny-battle:Tiles/tile_0177.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "fighter jet aircraft",
+      "expect": [
+        "tiny-battle:Tiles/tile_0100.png",
+        "tiny-battle:Tiles/tile_0118.png",
+        "tiny-battle:Tiles/tile_0136.png",
+        "tiny-battle:Tiles/tile_0154.png",
+        "tiny-battle:Tiles/tile_0172.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "infantry soldier with rifle",
+      "expect": [
+        "tiny-battle:Tiles/tile_0106.png",
+        "tiny-battle:Tiles/tile_0124.png",
+        "tiny-battle:Tiles/tile_0142.png",
+        "tiny-battle:Tiles/tile_0160.png",
+        "tiny-battle:Tiles/tile_0178.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "headquarters building",
+      "expect": [
+        "tiny-battle:Tiles/tile_0009.png",
+        "tiny-battle:Tiles/tile_0027.png",
+        "tiny-battle:Tiles/tile_0045.png",
+        "tiny-battle:Tiles/tile_0063.png",
+        "tiny-battle:Tiles/tile_0081.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "hill with rocky top high ground",
+      "expect": [
+        "tiny-battle:Tiles/tile_0005.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "rocket artillery on tracks",
+      "expect": [
+        "tiny-battle:Tiles/tile_0006.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "city buildings capturable",
+      "expect": [
+        "tiny-battle:Tiles/tile_0008.png",
+        "tiny-battle:Tiles/tile_0026.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "factory with chimneys",
+      "expect": [
+        "tiny-battle:Tiles/tile_0011.png",
+        "tiny-battle:Tiles/tile_0029.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "missile silo",
+      "expect": [
+        "tiny-battle:Tiles/tile_0013.png",
+        "tiny-battle:Tiles/tile_0031.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "rocket on launch pad",
+      "expect": [
+        "tiny-battle:Tiles/tile_0014.png",
+        "tiny-battle:Tiles/tile_0032.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "team flag on a pole",
+      "expect": [
+        "tiny-battle:Tiles/tile_0016.png",
+        "tiny-battle:Tiles/tile_0017.png",
+        "tiny-battle:Tiles/tile_0034.png",
+        "tiny-battle:Tiles/tile_0035.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "radar dish array",
+      "expect": [
+        "tiny-battle:Tiles/tile_0023.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "artillery cannon howitzer",
+      "expect": [
+        "tiny-battle:Tiles/tile_0024.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "gatehouse checkpoint barrier",
+      "expect": [
+        "tiny-battle:Tiles/tile_0025.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "lake surrounded by grass",
+      "expect": [
+        "tiny-battle:Tiles/tile_0021.png",
+        "tiny-battle:Tiles/tile_0022.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "coast shoreline sand and water",
+      "expect": [
+        "tiny-battle:Tiles/tile_0018.png",
+        "tiny-battle:Tiles/tile_0019.png",
+        "tiny-battle:Tiles/tile_0020.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "tiny-battle"
+    },
+    {
+      "q": "fire hydrant",
+      "expect": [
+        "roguelike-modern-city:Tiles/tile_0533.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "roguelike-modern-city"
+    },
+    {
+      "q": "chain link wire fence",
+      "expect": [
+        "roguelike-modern-city:Tiles/tile_0758.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "roguelike-modern-city"
+    },
+    {
+      "q": "pedestrian crossing stripes",
+      "expect": [
+        "roguelike-modern-city:Tiles/tile_0823.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "roguelike-modern-city"
+    },
+    {
+      "q": "parked car from above",
+      "expect": [
+        "roguelike-modern-city:Tiles/tile_0808.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "roguelike-modern-city"
+    },
+    {
+      "q": "striped shop awning",
+      "expect": [
+        "roguelike-modern-city:Tiles/tile_0356.png",
+        "roguelike-modern-city:Tiles/tile_0357.png",
+        "roguelike-modern-city:Tiles/tile_0358.png",
+        "roguelike-modern-city:Tiles/tile_0359.png",
+        "roguelike-modern-city:Tiles/tile_0360.png",
+        "roguelike-modern-city:Tiles/tile_0361.png",
+        "roguelike-modern-city:Tiles/tile_0362.png",
+        "roguelike-modern-city:Tiles/tile_0363.png",
+        "roguelike-modern-city:Tiles/tile_0364.png",
+        "roguelike-modern-city:Tiles/tile_0365.png",
+        "roguelike-modern-city:Tiles/tile_0366.png",
+        "roguelike-modern-city:Tiles/tile_0393.png",
+        "roguelike-modern-city:Tiles/tile_0394.png",
+        "roguelike-modern-city:Tiles/tile_0395.png",
+        "roguelike-modern-city:Tiles/tile_0396.png",
+        "roguelike-modern-city:Tiles/tile_0397.png",
+        "roguelike-modern-city:Tiles/tile_0398.png",
+        "roguelike-modern-city:Tiles/tile_0399.png",
+        "roguelike-modern-city:Tiles/tile_0400.png",
+        "roguelike-modern-city:Tiles/tile_0428.png",
+        "roguelike-modern-city:Tiles/tile_0429.png",
+        "roguelike-modern-city:Tiles/tile_0430.png",
+        "roguelike-modern-city:Tiles/tile_0431.png",
+        "roguelike-modern-city:Tiles/tile_0432.png",
+        "roguelike-modern-city:Tiles/tile_0433.png",
+        "roguelike-modern-city:Tiles/tile_0434.png",
+        "roguelike-modern-city:Tiles/tile_0435.png",
+        "roguelike-modern-city:Tiles/tile_0436.png",
+        "roguelike-modern-city:Tiles/tile_0437.png",
+        "roguelike-modern-city:Tiles/tile_0467.png",
+        "roguelike-modern-city:Tiles/tile_0468.png",
+        "roguelike-modern-city:Tiles/tile_0469.png",
+        "roguelike-modern-city:Tiles/tile_0470.png",
+        "roguelike-modern-city:Tiles/tile_0471.png",
+        "roguelike-modern-city:Tiles/tile_0472.png",
+        "roguelike-modern-city:Tiles/tile_0473.png",
+        "roguelike-modern-city:Tiles/tile_0474.png",
+        "roguelike-modern-city:Tiles/tile_0504.png",
+        "roguelike-modern-city:Tiles/tile_0505.png",
+        "roguelike-modern-city:Tiles/tile_0506.png",
+        "roguelike-modern-city:Tiles/tile_0507.png",
+        "roguelike-modern-city:Tiles/tile_0508.png",
+        "roguelike-modern-city:Tiles/tile_0509.png",
+        "roguelike-modern-city:Tiles/tile_0510.png",
+        "roguelike-modern-city:Tiles/tile_0511.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "roguelike-modern-city",
+      "note": "any awning tile answers this; the one audited by eye is tile_0472"
+    },
+    {
+      "q": "brick wall facade",
+      "expect": [
+        "roguelike-modern-city:Tiles/tile_0185.png",
+        "roguelike-modern-city:Tiles/tile_0186.png",
+        "roguelike-modern-city:Tiles/tile_0187.png",
+        "roguelike-modern-city:Tiles/tile_0188.png",
+        "roguelike-modern-city:Tiles/tile_0189.png",
+        "roguelike-modern-city:Tiles/tile_0190.png",
+        "roguelike-modern-city:Tiles/tile_0191.png",
+        "roguelike-modern-city:Tiles/tile_0192.png",
+        "roguelike-modern-city:Tiles/tile_0193.png",
+        "roguelike-modern-city:Tiles/tile_0194.png",
+        "roguelike-modern-city:Tiles/tile_0195.png",
+        "roguelike-modern-city:Tiles/tile_0196.png",
+        "roguelike-modern-city:Tiles/tile_0222.png",
+        "roguelike-modern-city:Tiles/tile_0223.png",
+        "roguelike-modern-city:Tiles/tile_0224.png",
+        "roguelike-modern-city:Tiles/tile_0225.png",
+        "roguelike-modern-city:Tiles/tile_0226.png",
+        "roguelike-modern-city:Tiles/tile_0227.png",
+        "roguelike-modern-city:Tiles/tile_0228.png",
+        "roguelike-modern-city:Tiles/tile_0229.png",
+        "roguelike-modern-city:Tiles/tile_0230.png",
+        "roguelike-modern-city:Tiles/tile_0231.png",
+        "roguelike-modern-city:Tiles/tile_0232.png",
+        "roguelike-modern-city:Tiles/tile_0233.png",
+        "roguelike-modern-city:Tiles/tile_0296.png",
+        "roguelike-modern-city:Tiles/tile_0297.png",
+        "roguelike-modern-city:Tiles/tile_0298.png",
+        "roguelike-modern-city:Tiles/tile_0299.png",
+        "roguelike-modern-city:Tiles/tile_0300.png",
+        "roguelike-modern-city:Tiles/tile_0301.png",
+        "roguelike-modern-city:Tiles/tile_0302.png",
+        "roguelike-modern-city:Tiles/tile_0303.png",
+        "roguelike-modern-city:Tiles/tile_0304.png",
+        "roguelike-modern-city:Tiles/tile_0305.png",
+        "roguelike-modern-city:Tiles/tile_0306.png",
+        "roguelike-modern-city:Tiles/tile_0307.png",
+        "roguelike-modern-city:Tiles/tile_0333.png",
+        "roguelike-modern-city:Tiles/tile_0334.png",
+        "roguelike-modern-city:Tiles/tile_0335.png",
+        "roguelike-modern-city:Tiles/tile_0336.png",
+        "roguelike-modern-city:Tiles/tile_0337.png",
+        "roguelike-modern-city:Tiles/tile_0338.png",
+        "roguelike-modern-city:Tiles/tile_0339.png",
+        "roguelike-modern-city:Tiles/tile_0340.png",
+        "roguelike-modern-city:Tiles/tile_0341.png",
+        "roguelike-modern-city:Tiles/tile_0342.png",
+        "roguelike-modern-city:Tiles/tile_0343.png",
+        "roguelike-modern-city:Tiles/tile_0407.png",
+        "roguelike-modern-city:Tiles/tile_0408.png",
+        "roguelike-modern-city:Tiles/tile_0409.png",
+        "roguelike-modern-city:Tiles/tile_0410.png",
+        "roguelike-modern-city:Tiles/tile_0411.png",
+        "roguelike-modern-city:Tiles/tile_0412.png",
+        "roguelike-modern-city:Tiles/tile_0413.png",
+        "roguelike-modern-city:Tiles/tile_0414.png",
+        "roguelike-modern-city:Tiles/tile_0415.png",
+        "roguelike-modern-city:Tiles/tile_0416.png",
+        "roguelike-modern-city:Tiles/tile_0417.png",
+        "roguelike-modern-city:Tiles/tile_0418.png",
+        "roguelike-modern-city:Tiles/tile_0419.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "roguelike-modern-city",
+      "note": "any brick facade tile answers this; the one audited by eye is tile_0231"
+    },
+    {
+      "q": "street food cart with wheels",
+      "expect": [
+        "roguelike-modern-city:Tiles/tile_0549.png",
+        "roguelike-modern-city:Tiles/tile_0550.png",
+        "roguelike-modern-city:Tiles/tile_0551.png",
+        "roguelike-modern-city:Tiles/tile_0588.png",
+        "roguelike-modern-city:Tiles/tile_0589.png",
+        "roguelike-modern-city:Tiles/tile_0590.png",
+        "roguelike-modern-city:Tiles/tile_0591.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "roguelike-modern-city"
+    },
+    {
+      "q": "market umbrella parasol",
+      "expect": [
+        "roguelike-modern-city:Tiles/tile_0552.png",
+        "roguelike-modern-city:Tiles/tile_0553.png",
+        "roguelike-modern-city:Tiles/tile_0554.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "roguelike-modern-city"
+    },
+    {
+      "q": "wheelchair disabled parking symbol",
+      "expect": [
+        "roguelike-modern-city:Tiles/tile_0900.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "roguelike-modern-city"
+    },
+    {
+      "q": "letter P parking bay",
+      "expect": [
+        "roguelike-modern-city:Tiles/tile_0901.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "roguelike-modern-city"
+    },
+    {
+      "q": "bike lane bicycle symbol",
+      "expect": [
+        "roguelike-modern-city:Tiles/tile_0902.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "roguelike-modern-city"
+    },
+    {
+      "q": "waterfall column",
+      "expect": [
+        "platformer-art-pixel:Tiles/tile_0040.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "platformer-art-pixel"
+    },
+    {
+      "q": "yellow gem",
+      "expect": [
+        "platformer-art-pixel:Tiles/tile_0376.png",
+        "platformer-art-pixel:Tiles/tile_0285.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "platformer-art-pixel"
+    },
+    {
+      "q": "green gem",
+      "expect": [
+        "platformer-art-pixel:Tiles/tile_0377.png",
+        "platformer-art-pixel:Tiles/tile_0286.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "platformer-art-pixel"
+    },
+    {
+      "q": "yellow key",
+      "expect": [
+        "platformer-art-pixel:Tiles/tile_0014.png",
+        "platformer-art-pixel:Tiles/tile_0407.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "platformer-art-pixel"
+    },
+    {
+      "q": "green key",
+      "expect": [
+        "platformer-art-pixel:Tiles/tile_0015.png",
+        "platformer-art-pixel:Tiles/tile_0404.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "platformer-art-pixel"
+    },
+    {
+      "q": "green slime blob enemy",
+      "expect": [
+        "platformer-art-pixel:Tiles/tile_0259.png",
+        "platformer-art-pixel:Tiles/tile_0260.png",
+        "platformer-art-pixel:Tiles/tile_0261.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "platformer-art-pixel"
+    },
+    {
+      "q": "row of small wooden boxes",
+      "expect": [
+        "platformer-art-pixel:Tiles/tile_0043.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "platformer-art-pixel"
+    },
+    {
+      "q": "cross braced wooden crate",
+      "expect": [
+        "platformer-art-pixel:Tiles/tile_0190.png",
+        "platformer-art-pixel:Tiles/tile_0191.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "platformer-art-pixel"
+    },
+    {
+      "q": "checkpoint flag on pole",
+      "expect": [
+        "platformer-art-pixel:Tiles/tile_0310.png",
+        "platformer-art-pixel:Tiles/tile_0311.png",
+        "platformer-art-pixel:Tiles/tile_0312.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "platformer-art-pixel"
+    },
+    {
+      "q": "desert cactus",
+      "expect": [
+        "platformer-art-pixel:Tiles/tile_0018.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "platformer-art-pixel"
+    },
+    {
+      "q": "stone wall carved with a face",
+      "expect": [
+        "platformer-art-pixel:Tiles/tile_0824.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "platformer-art-pixel"
+    },
+    {
+      "q": "white silhouette template",
+      "expect": [
+        "platformer-art-pixel:Tiles/tile_0509.png",
+        "platformer-art-pixel:Tiles/tile_0539.png",
+        "platformer-art-pixel:Tiles/tile_0569.png",
+        "platformer-art-pixel:Tiles/tile_0599.png",
+        "platformer-art-pixel:Tiles/tile_0659.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "platformer-art-pixel"
+    },
+    {
+      "q": "empty black void tile",
+      "expect": [
+        "1-bit-platformer:Tiles/Default/tile_0000.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "1-bit-platformer"
+    },
+    {
+      "q": "hanging lantern",
+      "expect": [
+        "1-bit-platformer:Tiles/Default/tile_0003.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "1-bit-platformer"
+    },
+    {
+      "q": "crate with corner rivets",
+      "expect": [
+        "1-bit-platformer:Tiles/Default/tile_0009.png",
+        "1-bit-platformer:Tiles/Default/tile_0029.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "1-bit-platformer"
+    },
+    {
+      "q": "stone block brick",
+      "expect": [
+        "1-bit-platformer:Tiles/Default/tile_0011.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "1-bit-platformer"
+    },
+    {
+      "q": "small rubble on the ground",
+      "expect": [
+        "1-bit-platformer:Tiles/Default/tile_0013.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "1-bit-platformer"
+    },
+    {
+      "q": "coin ring pickup",
+      "expect": [
+        "1-bit-platformer:Tiles/Default/tile_0020.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "1-bit-platformer"
+    },
+    {
+      "q": "gem crystal jewel",
+      "expect": [
+        "1-bit-platformer:Tiles/Default/tile_0021.png",
+        "1-bit-platformer:Tiles/Default/tile_0022.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "1-bit-platformer"
+    },
+    {
+      "q": "chain link pipe segment",
+      "expect": [
+        "1-bit-platformer:Tiles/Default/tile_0023.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "1-bit-platformer"
+    },
+    {
+      "q": "locked door keyhole block",
+      "expect": [
+        "1-bit-platformer:Tiles/Default/tile_0027.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "1-bit-platformer"
+    },
+    {
+      "q": "window frame opening",
+      "expect": [
+        "1-bit-platformer:Tiles/Default/tile_0031.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "1-bit-platformer"
+    },
+    {
+      "q": "tree with branches",
+      "expect": [
+        "1-bit-platformer:Tiles/Default/tile_0034.png",
+        "1-bit-platformer:Tiles/Default/tile_0035.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "1-bit-platformer"
+    },
+    {
+      "q": "bat flying enemy",
+      "expect": [
+        "1-bit-platformer:Tiles/Default/tile_0037.png",
+        "1-bit-platformer:Tiles/Default/tile_0036.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "1-bit-platformer"
+    },
+    {
+      "q": "key to unlock",
+      "expect": [
+        "1-bit-platformer:Tiles/Default/tile_0043.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "1-bit-platformer"
+    },
+    {
+      "q": "empty heart container",
+      "expect": [
+        "1-bit-platformer:Tiles/Default/tile_0041.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "1-bit-platformer"
+    },
+    {
+      "q": "vine climbing plant",
+      "expect": [
+        "1-bit-platformer:Tiles/Default/tile_0019.png",
+        "1-bit-platformer:Tiles/Default/tile_0039.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "1-bit-platformer"
+    },
+    {
+      "q": "candelabra torch bracket",
+      "expect": [
+        "1-bit-platformer:Tiles/Default/tile_0006.png"
+      ],
+      "kind": "semantic",
+      "added": "2026-09-06",
+      "pack": "1-bit-platformer"
+    },
+    {
+      "q": "something a player would want to pick up",
+      "expect": [
+        "*:*coin*",
+        "*:*gem*",
+        "*:*key*",
+        "*:*heart*",
+        "*:*star*",
+        "*:*pickup*",
+        "*:*powerup*",
+        "*:*collect*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a bad guy that walks toward the player",
+      "expect": [
+        "*:*enemy*",
+        "*:*slime*",
+        "*:*zombie*",
+        "*:*snail*",
+        "*:*worm*",
+        "*:*monster*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "ground the player can stand on",
+      "expect": [
+        "*:*ground*",
+        "*:*terrain*",
+        "*:*platform*",
+        "*:*grass*",
+        "*:*dirt*",
+        "*:*floor*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "something dangerous that hurts on touch",
+      "expect": [
+        "*:*spike*",
+        "*:*lava*",
+        "*:*saw*",
+        "*:*hazard*",
+        "*:*fire*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "what the player looks like when they die",
+      "expect": [
+        "*:*hurt*",
+        "*:*hit*",
+        "*:*dead*",
+        "*:*death*",
+        "*:*die*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a way to get to a higher floor",
+      "expect": [
+        "*:*ladder*",
+        "*:*stairs*",
+        "*:*climb*",
+        "*:*rope*",
+        "*:*vine*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "the door at the end of the level",
+      "expect": [
+        "*:*door*",
+        "*:*exit*",
+        "*:*gate*",
+        "*:*portal*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a box the player can break open",
+      "expect": [
+        "*:*crate*",
+        "*:*box*",
+        "*:*barrel*",
+        "*:*chest*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "scenery to make the sky less empty",
+      "expect": [
+        "*:*cloud*",
+        "*:*sky*",
+        "*:*background*",
+        "*:*bg*",
+        "*:*sun*",
+        "*:*moon*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "something to show how much health is left",
+      "expect": [
+        "*:*heart*",
+        "*:*health*",
+        "*:*bar*",
+        "*:*life*",
+        "*:*hp*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a button for the main menu",
+      "expect": [
+        "*:*button*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "the icon for saving the game",
+      "expect": [
+        "*:*save*",
+        "*:*floppy*",
+        "*:*disk*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "tell the player which controller button to press",
+      "expect": [
+        "input-prompts:*",
+        "mobile-controls:*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a sound when the player jumps",
+      "expect": [
+        "*:*jump*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a tree",
+      "expect": [
+        "*:*tree*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "water the player can swim in",
+      "expect": [
+        "*:*water*",
+        "*:*liquid*",
+        "*:*sea*",
+        "*:*ocean*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a vehicle for a racing game",
+      "expect": [
+        "racing-pack:*",
+        "racing-kit:*",
+        "*:*car*",
+        "*:*kart*",
+        "*:*racer*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a spaceship for a shooter",
+      "expect": [
+        "space-shooter-remastered:*",
+        "space-shooter-redux:*",
+        "*:*ship*",
+        "*:*spaceship*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "soldiers for a war game",
+      "expect": [
+        "tiny-battle:*",
+        "top-down-shooter:*",
+        "*:*soldier*",
+        "*:*infantry*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "buildings for a city",
+      "expect": [
+        "roguelike-modern-city:*",
+        "sketch-town:*",
+        "platformer-art-buildings:*",
+        "*:*house*",
+        "*:*building*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "cards for a card game",
+      "expect": [
+        "playing-cards-pack:*",
+        "boardgame-pack:*card*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "dice",
+      "expect": [
+        "*:*dice*",
+        "*:*die*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a mouse pointer",
+      "expect": [
+        "cursor-pack:*",
+        "*:*cursor*",
+        "*:*pointer*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a face showing an emotion",
+      "expect": [
+        "emotes-pack:*",
+        "*:*emote*",
+        "*:*face*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a magnifying glass icon",
+      "expect": [
+        "*:*zoom*",
+        "*:*magnif*",
+        "*:*search*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "something that explodes",
+      "expect": [
+        "*:*explos*",
+        "*:*blast*",
+        "*:*bomb*",
+        "*:*explod*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06: a file whose own name says exactly this was in the top 10 under a pack the expectation had not listed"
+    },
+    {
+      "q": "smoke or dust when landing",
+      "expect": [
+        "*:*smoke*",
+        "*:*dust*",
+        "*:*puff*",
+        "*:*particle*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a rock",
+      "expect": [
+        "*:*rock*",
+        "*:*boulder*",
+        "*:*stone*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a bridge to cross a gap",
+      "expect": [
+        "*:*bridge*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a sign with an arrow on it",
+      "expect": [
+        "*:*sign*",
+        "*:*arrow*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "snow for a winter level",
+      "expect": [
+        "*:*snow*",
+        "*:*ice*",
+        "platformer-art-winter:*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "candy for a sweet themed level",
+      "expect": [
+        "platformer-art-candy:*",
+        "*:*candy*",
+        "*:*cake*",
+        "*:*lollipop*",
+        "platformer-art-pixel:Tiles/tile_0623.png",
+        "platformer-art-pixel:Tiles/tile_0624.png",
+        "platformer-art-pixel:Tiles/tile_0606.png"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06 after looking at a contact sheet of the top 10: these numbered tiles have no name to glob, but the pixels are the thing asked for"
+    },
+    {
+      "q": "a flag to mark a checkpoint",
+      "expect": [
+        "*:*flag*",
+        "*:*checkpoint*",
+        "platformer-art-pixel:Tiles/tile_0310.png",
+        "platformer-art-pixel:Tiles/tile_0311.png",
+        "platformer-art-pixel:Tiles/tile_0312.png"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06 after looking at a contact sheet of the top 10: these numbered tiles have no name to glob, but the pixels are the thing asked for"
+    },
+    {
+      "q": "a robot enemy",
+      "expect": [
+        "*:*robot*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "an alien character",
+      "expect": [
+        "*:*alien*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a bee that flies around",
+      "expect": [
+        "*:*bee*",
+        "*:*wasp*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a fish",
+      "expect": [
+        "*:*fish*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a bat in a cave",
+      "expect": [
+        "*:*bat*",
+        "platformer-art-pixel:Tiles/tile_0441.png",
+        "platformer-art-pixel:Tiles/tile_0440.png",
+        "platformer-art-pixel:Tiles/tile_0442.png"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06",
+      "note": "widened 2026-09-06 after looking at a contact sheet of the top 10: these numbered tiles have no name to glob, but the pixels are the thing asked for"
+    },
+    {
+      "q": "a frog",
+      "expect": [
+        "*:*frog*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "gold treasure",
+      "expect": [
+        "*:*gold*",
+        "*:*coin*",
+        "*:*treasure*",
+        "*:*chest*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a torch to light a dungeon",
+      "expect": [
+        "*:*torch*",
+        "*:*lantern*",
+        "*:*lamp*",
+        "*:*candle*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a fence around a farm",
+      "expect": [
+        "*:*fence*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a sword for melee combat",
+      "expect": [
+        "*:*sword*",
+        "*:*blade*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a gun for shooting",
+      "expect": [
+        "*:*gun*",
+        "*:*blaster*",
+        "*:*rifle*",
+        "*:*pistol*",
+        "*:*weapon*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a hex tile for a strategy map",
+      "expect": [
+        "hexagon-tiles:*",
+        "hexagon-pack:*",
+        "*:*hex*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "isometric block for a 3d looking level",
+      "expect": [
+        "isometric-blocks:*",
+        "isometric-miniature-*:*",
+        "*:*isometric*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a border to frame a dialog box",
+      "expect": [
+        "fantasy-ui-borders:*",
+        "*:*panel*",
+        "*:*border*",
+        "*:*frame*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "numbers for a score display",
+      "expect": [
+        "*:*number*",
+        "*:*numeral*",
+        "*:*digit*",
+        "*:*text_*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "a wall for the inside of a house",
+      "expect": [
+        "*:*wall*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    },
+    {
+      "q": "grass that tiles seamlessly",
+      "expect": [
+        "*:*grass*"
+      ],
+      "kind": "intent",
+      "added": "2026-09-06"
+    }
+  ]
+}

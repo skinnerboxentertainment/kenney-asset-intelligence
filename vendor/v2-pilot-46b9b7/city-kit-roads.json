@@ -1,0 +1,2238 @@
+{
+  "pack": "city-kit-roads",
+  "name": "City Kit (Roads)",
+  "category": "3D",
+  "schemaVersion": "v2-draft",
+  "files": [
+    {
+      "path": "Previews\\bridge-pillar-wide.png",
+      "type": "image",
+      "visual": {
+        "what": "Wide vertical support pillar for elevating a bridge road segment above ground level.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "bridge-support-wide",
+        "connectors": [],
+        "pairsWith": [
+          "road-bridge.png"
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\bridge-pillar.png",
+      "type": "image",
+      "visual": {
+        "what": "Standard-width vertical support pillar for elevating a bridge road segment.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "bridge-support",
+        "connectors": [],
+        "pairsWith": [
+          "road-bridge.png"
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\construction-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "Freestanding white-and-gray construction jersey barrier, decorative prop.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "decor-barrier",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\construction-cone.png",
+      "type": "image",
+      "visual": {
+        "what": "Orange-and-white traffic cone, decorative prop.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "decor-cone",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\construction-light.png",
+      "type": "image",
+      "visual": {
+        "what": "Striped orange-and-white warning beacon post, decorative prop.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "decor-beacon",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\light-curved-cross.png",
+      "type": "image",
+      "visual": {
+        "what": "Street lamp post with four curved arms radiating in all directions, for a 4-way intersection.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "streetlight-cross",
+        "connectors": [],
+        "pairsWith": [
+          "road-crossroad.png"
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\light-curved-double.png",
+      "type": "image",
+      "visual": {
+        "what": "Street lamp post with two curved arms on opposite sides, for a straight road segment.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "streetlight-double",
+        "connectors": [],
+        "pairsWith": [
+          "road-straight.png"
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\light-curved.png",
+      "type": "image",
+      "visual": {
+        "what": "Street lamp post with a single curved arm, for a road edge or end.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "streetlight-single",
+        "connectors": [],
+        "pairsWith": [
+          "road-side.png",
+          "road-end.png"
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\light-square-cross.png",
+      "type": "image",
+      "visual": {
+        "what": "Street lamp post with four straight arms, squared-off style, for a 4-way intersection.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "streetlight-cross-square",
+        "connectors": [],
+        "pairsWith": [
+          "road-crossroad.png"
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\light-square-double.png",
+      "type": "image",
+      "visual": {
+        "what": "Street lamp post with two straight arms on opposite sides, squared-off style.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "streetlight-double-square",
+        "connectors": [],
+        "pairsWith": [
+          "road-straight.png"
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\light-square.png",
+      "type": "image",
+      "visual": {
+        "what": "Street lamp post with a single straight arm, squared-off style.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "streetlight-single-square",
+        "connectors": [],
+        "pairsWith": [
+          "road-side.png",
+          "road-end.png"
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-bend-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "Curved corner guardrail insert only, no road surface -- overlays a road-bend piece.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-bend",
+        "connectors": [],
+        "pairsWith": [
+          "road-bend.png"
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-bend-sidewalk.png",
+      "type": "image",
+      "visual": {
+        "what": "90-degree rounded road bend with a pedestrian sidewalk along the outer edge.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-bend-sidewalk",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "E",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-bend-square-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "Square-cornered 90-degree road bend with guardrail overlay.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-bend-square-barrier",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "E",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-bend-square.png",
+      "type": "image",
+      "visual": {
+        "what": "Square-cornered 90-degree road bend, sharp corner rather than a curve.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-bend-square",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "E",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-bend.png",
+      "type": "image",
+      "visual": {
+        "what": "Standard rounded 90-degree road bend connecting two adjacent edges.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-bend",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "E",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-bridge.png",
+      "type": "image",
+      "visual": {
+        "what": "Elevated straight bridge deck segment, meant to sit atop bridge-pillar supports.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-bridge",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ],
+        "pairsWith": [
+          "bridge-pillar.png",
+          "bridge-pillar-wide.png"
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-crossing.png",
+      "type": "image",
+      "visual": {
+        "what": "Straight road segment with a painted pedestrian crosswalk (zebra stripes) across it.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-crossing",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-crossroad-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "4-way intersection, corner-post barrier overlay only.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-crossroad",
+        "connectors": [],
+        "pairsWith": [
+          "road-crossroad.png"
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-crossroad-line.png",
+      "type": "image",
+      "visual": {
+        "what": "4-way intersection with painted lane-line markings.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-crossroad-line",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "E",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "W",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-crossroad-path.png",
+      "type": "image",
+      "visual": {
+        "what": "4-way intersection with a pedestrian crossing path overlay.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-crossroad-path",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "E",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "W",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-crossroad.png",
+      "type": "image",
+      "visual": {
+        "what": "Plain 4-way intersection, all four edges open.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-crossroad",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "E",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "W",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-curve-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "Two separate curved guardrail segments, overlay only, no road surface.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-curve",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-curve-intersection-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "Barrier overlay for a curved road merging into an intersection.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-curve-intersection",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-curve-intersection.png",
+      "type": "image",
+      "visual": {
+        "what": "Curved road merging into a 3-way intersection -- a bend with a branch.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-curve-intersection",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "E",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-curve-pavement.png",
+      "type": "image",
+      "visual": {
+        "what": "Large-radius curved road with a paved sidewalk along the outer edge.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-curve-pavement",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "E",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-curve.png",
+      "type": "image",
+      "visual": {
+        "what": "Large-radius smooth curved bend connecting two adjacent edges.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-curve",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "E",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-driveway-double-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "Barrier overlay for a straight road with two driveway entry points.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-driveway-double",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-driveway-double.png",
+      "type": "image",
+      "visual": {
+        "what": "Straight road with two separate driveway entrances branching off one side.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-driveway-double",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "W",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-driveway-single-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "Barrier overlay for a straight road with one driveway entry point.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-driveway-single",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-driveway-single.png",
+      "type": "image",
+      "visual": {
+        "what": "Straight road with a single driveway entrance branching off one side.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-driveway-single",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "W",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-end-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "U-shaped barrier cap overlay for a flat dead-end road.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-end",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-end-round-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "Curved barrier cap overlay for a rounded dead-end road.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-end-round",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-end-round.png",
+      "type": "image",
+      "visual": {
+        "what": "Rounded dead-end road cap, connects on one edge only.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-end-round",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-end.png",
+      "type": "image",
+      "visual": {
+        "what": "Flat dead-end road cap, connects on one edge only.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-end",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-intersection-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "Barrier overlay for a 3-way (T) intersection.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-intersection",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-intersection-line.png",
+      "type": "image",
+      "visual": {
+        "what": "3-way (T) intersection with painted lane-line markings.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-intersection-line",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "E",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-intersection-path.png",
+      "type": "image",
+      "visual": {
+        "what": "3-way (T) intersection with a pedestrian crossing path overlay.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-intersection-path",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "E",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-intersection.png",
+      "type": "image",
+      "visual": {
+        "what": "Plain 3-way (T) intersection, three edges open, one side closed.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-intersection",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "E",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-roundabout-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "Ring of bollard/barrier posts overlay for a roundabout.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-roundabout",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-roundabout.png",
+      "type": "image",
+      "visual": {
+        "what": "Full roundabout piece with a circular center island, all four edges open.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-roundabout",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "E",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "W",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-side-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "Two short barrier segments set at an angle, overlay only.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-side",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-side-entry-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "Barrier overlay for a curved side-entry merge lane.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-side-entry",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-side-entry.png",
+      "type": "image",
+      "visual": {
+        "what": "Curved merge lane entering the main road from the side, like an on-ramp.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-side-entry",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "W",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-side-exit-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "Barrier overlay for a curved side-exit merge lane.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-side-exit",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-side-exit.png",
+      "type": "image",
+      "visual": {
+        "what": "Curved merge lane exiting the main road to the side, like an off-ramp (mirror of road-side-entry).",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-side-exit",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "W",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-side.png",
+      "type": "image",
+      "visual": {
+        "what": "Straight road with an angled diagonal branch off to the side.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-side",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "W",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-slant-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "Barrier overlay for a standard sloped ramp road segment.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-slant",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-slant-curve-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "Barrier overlay for a curved sloped ramp road segment.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-slant-curve",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-slant-curve.png",
+      "type": "image",
+      "visual": {
+        "what": "Curved road segment that changes elevation while turning.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-slant-curve",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "E",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ],
+        "note": "connects at different heights on each edge"
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-slant-flat-curve.png",
+      "type": "image",
+      "visual": {
+        "what": "Transition piece from a sloped ramp down to flat ground, curved.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-slant-flat-curve",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "E",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-slant-flat-high.png",
+      "type": "image",
+      "visual": {
+        "what": "Transition piece from a steep high slant down to flat ground, straight.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-slant-flat-high",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-slant-flat.png",
+      "type": "image",
+      "visual": {
+        "what": "Transition piece from a standard slant down to flat ground, straight.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-slant-flat",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-slant-high-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "Barrier overlay for a steep high-elevation ramp segment.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-slant-high",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-slant-high.png",
+      "type": "image",
+      "visual": {
+        "what": "Steep high-elevation straight ramp road segment.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-slant-high",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ],
+        "note": "connects at different heights on each edge"
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-slant.png",
+      "type": "image",
+      "visual": {
+        "what": "Standard-elevation straight ramp road segment.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-slant",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ],
+        "note": "connects at different heights on each edge"
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-split-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "Barrier overlay for a road fork/split (Y-junction).",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-split",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-split.png",
+      "type": "image",
+      "visual": {
+        "what": "Road fork where one incoming lane splits into two diverging lanes (Y-junction).",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-split",
+        "connectors": [
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "E",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-square-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "Square ring barrier overlay for an open plaza/parking tile.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-square",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-square.png",
+      "type": "image",
+      "visual": {
+        "what": "Flat open square plaza/parking tile with no lane markings, all four edges open.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-square",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "E",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "W",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-straight-barrier-end.png",
+      "type": "image",
+      "visual": {
+        "what": "Barrier overlay for a straight segment that terminates.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-straight-end",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-straight-barrier-half.png",
+      "type": "image",
+      "visual": {
+        "what": "Barrier overlay for a half-length straight segment.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-straight-half",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-straight-barrier.png",
+      "type": "image",
+      "visual": {
+        "what": "Barrier overlay for a full-length straight segment.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "overlay-barrier-straight",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-straight-half.png",
+      "type": "image",
+      "visual": {
+        "what": "Half-length straight road segment.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-straight-half",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\road-straight.png",
+      "type": "image",
+      "visual": {
+        "what": "Standard full-length straight road segment -- the canonical piece most others pair with.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "road-straight",
+        "connectors": [
+          {
+            "edge": "N",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          },
+          {
+            "edge": "S",
+            "type": "road",
+            "compatibleWith": [
+              "*road*"
+            ]
+          }
+        ]
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\sign-highway-detailed.png",
+      "type": "image",
+      "visual": {
+        "what": "Overhead highway sign gantry with two green destination panels and a small extra sign, decorative prop.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "decor-sign-gantry-detailed",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\sign-highway-wide.png",
+      "type": "image",
+      "visual": {
+        "what": "Overhead highway sign gantry with one wide green destination panel, decorative prop.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "decor-sign-gantry-wide",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\sign-highway.png",
+      "type": "image",
+      "visual": {
+        "what": "Overhead highway sign gantry with two green destination panels, decorative prop.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "decor-sign-gantry",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\tile-high.png",
+      "type": "image",
+      "visual": {
+        "what": "Plain elevated cube-shaped terrain filler block, no road markings.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "terrain-high",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\tile-low.png",
+      "type": "image",
+      "visual": {
+        "what": "Plain flat thin terrain filler tile, no road markings.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "terrain-low",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\tile-slant.png",
+      "type": "image",
+      "visual": {
+        "what": "Plain sloped terrain wedge block for elevation transitions, no road markings.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "terrain-slant",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    },
+    {
+      "path": "Previews\\tile-slantHigh.png",
+      "type": "image",
+      "visual": {
+        "what": "Plain steep sloped terrain wedge block for elevation transitions, no road markings.",
+        "orientation": "isometric-preview-render",
+        "style": "flat-vector",
+        "palette": "monochrome light gray/lavender with white highlights; green/orange only on highway signs and construction props",
+        "transparency": "yes"
+      },
+      "kit": {
+        "isKitPiece": true,
+        "role": "terrain-slant-high",
+        "connectors": []
+      },
+      "analysis": {
+        "method": "claude-vision",
+        "batchId": "city-kit-roads Previews contact sheets 01-03",
+        "analyzedAt": "2026-09-20",
+        "confidence": "high"
+      }
+    }
+  ]
+}

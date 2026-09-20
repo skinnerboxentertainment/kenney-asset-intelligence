@@ -1,0 +1,1500 @@
+{
+  "pack": "tiny-battle",
+  "count": 198,
+  "assets": [
+    {
+      "path": "Tiles/tile_0000.png",
+      "observed": "Plain green grass tile. Used as: grass, plain, terrain, ground tile, field.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0001.png",
+      "observed": "Grass tile flecked with darker tufts. Used as: grass, rough terrain, ground tile, field.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0002.png",
+      "observed": "Grass tile scattered with small orange flowers. Used as: grass, flowers, meadow, terrain, ground tile.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0003.png",
+      "observed": "Curved shoreline: water meeting sand and grass. Used as: coast, shore, beach, water edge, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0004.png",
+      "observed": "Straight shoreline: a band of water below sand and grass. Used as: coast, shore, beach, water edge, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0005.png",
+      "observed": "Green hill capped with bare brown rock. Used as: hill, mountain, high ground, terrain, elevation.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0006.png",
+      "observed": "Grey tracked vehicle carrying a rocket launcher. Used as: rocket artillery, launcher, tracked vehicle, heavy unit, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0007.png",
+      "observed": "Grey curved pipe standing upright, like a periscope. Used as: periscope, pipe, vent, prop, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0008.png",
+      "observed": "Grey team dense cluster of city towers with lit windows. Used as: city, urban tile, capturable property, buildings, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0009.png",
+      "observed": "Grey team wide headquarters building with a long row of windows. Used as: HQ, headquarters, base, capturable property, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0010.png",
+      "observed": "Grey team apartment or barracks block. Used as: barracks, apartment, housing, capturable property, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0011.png",
+      "observed": "Grey team factory with a saw-tooth roof and chimneys. Used as: factory, production building, unit production, capturable property, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0012.png",
+      "observed": "Grey team industrial refinery of tanks and pipework. Used as: refinery, industry, resource building, capturable property, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0013.png",
+      "observed": "Grey team missile silo with raised launch rails. Used as: missile silo, launcher, artillery structure, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0014.png",
+      "observed": "Grey team rocket standing upright on a launch pad. Used as: rocket, missile, launch site, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0015.png",
+      "observed": "Grey team low bunker with a control tower alongside. Used as: bunker, command post, control building, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0016.png",
+      "observed": "Grey team flag hanging straight down from a pole. Used as: flag, team marker, ownership, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0017.png",
+      "observed": "Grey team flag waving out from a pole. Used as: flag, team marker, ownership, capture point, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0018.png",
+      "observed": "Curved river bank running through grass with a sandy margin. Used as: river, coast, water edge, terrain, bend.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0019.png",
+      "observed": "Straight band of water below sand and grass. Used as: river, coast, shore, water edge, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0020.png",
+      "observed": "Bay curving into the grass with a sandy rim. Used as: bay, coast, shore, water edge, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0021.png",
+      "observed": "Round lake of open water ringed by grass. Used as: lake, pond, water, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0022.png",
+      "observed": "Lake of open water ringed by grass. Used as: lake, pond, water, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0023.png",
+      "observed": "Grey radar array of crossed dishes. Used as: radar, antenna, sensor, detection structure, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0024.png",
+      "observed": "Grey tracked artillery piece with a long barrel. Used as: artillery, cannon, howitzer, heavy unit, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0025.png",
+      "observed": "Grey gatehouse fronted by a chequered barrier. Used as: gate, checkpoint, barrier, entrance, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0026.png",
+      "observed": "Green team dense cluster of city towers with lit windows. Used as: city, urban tile, capturable property, buildings, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0027.png",
+      "observed": "Green team wide headquarters building with a long row of windows. Used as: HQ, headquarters, base, capturable property, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0028.png",
+      "observed": "Green team apartment or barracks block. Used as: barracks, apartment, housing, capturable property, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0029.png",
+      "observed": "Green team factory with a saw-tooth roof and chimneys. Used as: factory, production building, unit production, capturable property, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0030.png",
+      "observed": "Green team industrial refinery of tanks and pipework. Used as: refinery, industry, resource building, capturable property, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0031.png",
+      "observed": "Green team missile silo with raised launch rails. Used as: missile silo, launcher, artillery structure, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0032.png",
+      "observed": "Green team rocket standing upright on a launch pad. Used as: rocket, missile, launch site, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0033.png",
+      "observed": "Green team low bunker with a control tower alongside. Used as: bunker, command post, control building, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0034.png",
+      "observed": "Green team flag hanging straight down from a pole. Used as: flag, team marker, ownership, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0035.png",
+      "observed": "Green team flag waving out from a pole. Used as: flag, team marker, ownership, capture point, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0036.png",
+      "observed": "Grass tile with a narrow channel of water down one side. Used as: river, stream, water edge, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0037.png",
+      "observed": "Open water tile. Used as: water, sea, ocean, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0038.png",
+      "observed": "Open water tile. Used as: water, sea, ocean, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0039.png",
+      "observed": "Open water tile. Used as: water, sea, ocean, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0040.png",
+      "observed": "Blue arrow pointing up. Used as: arrow, direction, move up, path marker, HUD.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0041.png",
+      "observed": "Blue arrow pointing left. Used as: arrow, direction, move left, path marker, HUD.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0042.png",
+      "observed": "Blue straight double line. Used as: path, move line, route, HUD, marker.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0043.png",
+      "observed": "Blue arrow pointing right. Used as: arrow, direction, move right, path marker, HUD.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0044.png",
+      "observed": "Blue team dense cluster of city towers with lit windows. Used as: city, urban tile, capturable property, buildings, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0045.png",
+      "observed": "Blue team wide headquarters building with a long row of windows. Used as: HQ, headquarters, base, capturable property, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0046.png",
+      "observed": "Blue team apartment or barracks block. Used as: barracks, apartment, housing, capturable property, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0047.png",
+      "observed": "Blue team factory with a saw-tooth roof and chimneys. Used as: factory, production building, unit production, capturable property, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0048.png",
+      "observed": "Blue team industrial refinery of tanks and pipework. Used as: refinery, industry, resource building, capturable property, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0049.png",
+      "observed": "Blue team missile silo with raised launch rails. Used as: missile silo, launcher, artillery structure, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0050.png",
+      "observed": "Blue team rocket standing upright on a launch pad. Used as: rocket, missile, launch site, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0051.png",
+      "observed": "Blue team low bunker with a control tower alongside. Used as: bunker, command post, control building, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0052.png",
+      "observed": "Blue team flag hanging straight down from a pole. Used as: flag, team marker, ownership, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0053.png",
+      "observed": "Blue team flag waving out from a pole. Used as: flag, team marker, ownership, capture point, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0054.png",
+      "observed": "Grass giving way to open water. Used as: coast, shore, water edge, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0055.png",
+      "observed": "Open water meeting a grass bank. Used as: coast, shore, water edge, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0056.png",
+      "observed": "Grass bank beside open water. Used as: coast, shore, water edge, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0057.png",
+      "observed": "Channel of water between two grass banks. Used as: river, channel, strait, water, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0058.png",
+      "observed": "Straight vertical river running top to bottom. Used as: river, water, straight, terrain, waterway.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0059.png",
+      "observed": "River bending through a right-angle turn. Used as: river, water, corner, bend, waterway.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0060.png",
+      "observed": "River bending through a right-angle turn. Used as: river, water, corner, bend, waterway.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0061.png",
+      "observed": "Four white corner brackets framing an empty square. Used as: selection, cursor, target reticle, highlight, HUD.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0062.png",
+      "observed": "Red team dense cluster of city towers with lit windows. Used as: city, urban tile, capturable property, buildings, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0063.png",
+      "observed": "Red team wide headquarters building with a long row of windows. Used as: HQ, headquarters, base, capturable property, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0064.png",
+      "observed": "Red team apartment or barracks block. Used as: barracks, apartment, housing, capturable property, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0065.png",
+      "observed": "Red team factory with a saw-tooth roof and chimneys. Used as: factory, production building, unit production, capturable property, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0066.png",
+      "observed": "Red team industrial refinery of tanks and pipework. Used as: refinery, industry, resource building, capturable property, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0067.png",
+      "observed": "Red team missile silo with raised launch rails. Used as: missile silo, launcher, artillery structure, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0068.png",
+      "observed": "Red team rocket standing upright on a launch pad. Used as: rocket, missile, launch site, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0069.png",
+      "observed": "Red team low bunker with a control tower alongside. Used as: bunker, command post, control building, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0070.png",
+      "observed": "Red team flag hanging straight down from a pole. Used as: flag, team marker, ownership, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0071.png",
+      "observed": "Red team flag waving out from a pole. Used as: flag, team marker, ownership, capture point, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0072.png",
+      "observed": "Open water tile. Used as: water, sea, ocean, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0073.png",
+      "observed": "Water with a sandy shore along the top. Used as: coast, shore, beach, water edge, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0074.png",
+      "observed": "Water with a shoreline along one edge. Used as: coast, shore, beach, water edge, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0075.png",
+      "observed": "Open water tile. Used as: water, sea, ocean, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0076.png",
+      "observed": "Blue arrow pointing down. Used as: arrow, direction, move down, path marker, HUD.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0077.png",
+      "observed": "River bending through a right-angle turn. Used as: river, water, corner, bend, waterway.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0078.png",
+      "observed": "River bending through a right-angle turn. Used as: river, water, corner, bend, waterway.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0079.png",
+      "observed": "Yellow and black diagonal hazard stripes. Used as: hazard stripes, warning, construction, barrier, HUD.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0080.png",
+      "observed": "Orange team dense cluster of city towers with lit windows. Used as: city, urban tile, capturable property, buildings, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0081.png",
+      "observed": "Orange team wide headquarters building with a long row of windows. Used as: HQ, headquarters, base, capturable property, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0082.png",
+      "observed": "Orange team apartment or barracks block. Used as: barracks, apartment, housing, capturable property, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0083.png",
+      "observed": "Orange team factory with a saw-tooth roof and chimneys. Used as: factory, production building, unit production, capturable property, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0084.png",
+      "observed": "Orange team industrial refinery of tanks and pipework. Used as: refinery, industry, resource building, capturable property, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0085.png",
+      "observed": "Orange team missile silo with raised launch rails. Used as: missile silo, launcher, artillery structure, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0086.png",
+      "observed": "Orange team rocket standing upright on a launch pad. Used as: rocket, missile, launch site, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0087.png",
+      "observed": "Orange team low bunker with a control tower alongside. Used as: bunker, command post, control building, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0088.png",
+      "observed": "Orange team flag hanging straight down from a pole. Used as: flag, team marker, ownership, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0089.png",
+      "observed": "Orange team flag waving out from a pole. Used as: flag, team marker, ownership, capture point, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0090.png",
+      "observed": "Open water with a faint shore at the corner. Used as: water, coast, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0091.png",
+      "observed": "Water meeting a grassy bank. Used as: coast, shore, water edge, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0092.png",
+      "observed": "Water with a shoreline along one side. Used as: coast, shore, water edge, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0093.png",
+      "observed": "Open water tile. Used as: water, sea, ocean, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0094.png",
+      "observed": "Single dark green tree. Used as: tree, forest, woods, cover, terrain feature.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0095.png",
+      "observed": "Grey team supply truck. Used as: truck, supply, logistics, transport unit, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0096.png",
+      "observed": "Grey team transport truck loaded with crates. Used as: transport, cargo truck, supply, resupply, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0097.png",
+      "observed": "Grey team armoured personnel carrier. Used as: APC, troop carrier, armoured transport, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0098.png",
+      "observed": "Grey team battle tank with a forward gun. Used as: tank, armour, heavy unit, ground unit, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0099.png",
+      "observed": "Grey team light recon vehicle. Used as: recon, scout, jeep, light vehicle, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0100.png",
+      "observed": "Grey team fighter jet. Used as: jet, fighter, aircraft, air unit, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0101.png",
+      "observed": "Grey team helicopter seen from the side. Used as: helicopter, gunship, air unit, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0102.png",
+      "observed": "Grey team helicopter seen from above with its rotor spinning. Used as: helicopter, air unit, top-down, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0103.png",
+      "observed": "Grey team small boat or landing craft. Used as: boat, landing craft, naval unit, transport, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0104.png",
+      "observed": "Grey team large warship bristling with guns. Used as: battleship, warship, naval unit, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0105.png",
+      "observed": "Grey team submarine running on the surface. Used as: submarine, naval unit, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0106.png",
+      "observed": "Grey team infantry soldier standing with a rifle. Used as: infantry, soldier, foot unit, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0107.png",
+      "observed": "Grey team infantry soldier shouldering a heavy weapon. Used as: infantry, bazooka, anti-tank, foot unit, grey team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0108.png",
+      "observed": "Grey road tile with an open centre. Used as: road, path, street, pavement, terrain, tile.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0109.png",
+      "observed": "Grey road tile forming a junction. Used as: road, path, street, pavement, terrain, tile.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0110.png",
+      "observed": "Grey road running horizontally. Used as: road, path, street, pavement, terrain, tile.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0111.png",
+      "observed": "Grey road forming a turn. Used as: road, path, street, pavement, terrain, tile.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0112.png",
+      "observed": "Pair of green trees. Used as: trees, forest, woods, cover, terrain feature.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0113.png",
+      "observed": "Green team supply truck. Used as: truck, supply, logistics, transport unit, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0114.png",
+      "observed": "Green team transport truck loaded with crates. Used as: transport, cargo truck, supply, resupply, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0115.png",
+      "observed": "Green team armoured personnel carrier. Used as: APC, troop carrier, armoured transport, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0116.png",
+      "observed": "Green team battle tank with a forward gun. Used as: tank, armour, heavy unit, ground unit, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0117.png",
+      "observed": "Green team light recon vehicle. Used as: recon, scout, jeep, light vehicle, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0118.png",
+      "observed": "Green team fighter jet. Used as: jet, fighter, aircraft, air unit, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0119.png",
+      "observed": "Green team helicopter seen from the side. Used as: helicopter, gunship, air unit, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0120.png",
+      "observed": "Green team helicopter seen from above with its rotor spinning. Used as: helicopter, air unit, top-down, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0121.png",
+      "observed": "Green team small boat or landing craft. Used as: boat, landing craft, naval unit, transport, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0122.png",
+      "observed": "Green team large warship bristling with guns. Used as: battleship, warship, naval unit, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0123.png",
+      "observed": "Green team submarine running on the surface. Used as: submarine, naval unit, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0124.png",
+      "observed": "Green team infantry soldier standing with a rifle. Used as: infantry, soldier, foot unit, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0125.png",
+      "observed": "Green team infantry soldier shouldering a heavy weapon. Used as: infantry, bazooka, anti-tank, foot unit, green team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0126.png",
+      "observed": "Grey road forming a turn. Used as: road, path, street, pavement, terrain, tile.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0127.png",
+      "observed": "Grey road forming a curve. Used as: road, path, street, pavement, terrain, tile.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0128.png",
+      "observed": "Grey road segment. Used as: road, path, street, pavement, terrain, tile.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0129.png",
+      "observed": "Grey road forming a curve. Used as: road, path, street, pavement, terrain, tile.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0130.png",
+      "observed": "Grey road running horizontally. Used as: road, path, street, pavement, terrain, tile.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0131.png",
+      "observed": "Blue team supply truck. Used as: truck, supply, logistics, transport unit, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0132.png",
+      "observed": "Blue team transport truck loaded with crates. Used as: transport, cargo truck, supply, resupply, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0133.png",
+      "observed": "Blue team armoured personnel carrier. Used as: APC, troop carrier, armoured transport, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0134.png",
+      "observed": "Blue team battle tank with a forward gun. Used as: tank, armour, heavy unit, ground unit, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0135.png",
+      "observed": "Blue team light recon vehicle. Used as: recon, scout, jeep, light vehicle, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0136.png",
+      "observed": "Blue team fighter jet. Used as: jet, fighter, aircraft, air unit, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0137.png",
+      "observed": "Blue team helicopter seen from the side. Used as: helicopter, gunship, air unit, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0138.png",
+      "observed": "Blue team helicopter seen from above with its rotor spinning. Used as: helicopter, air unit, top-down, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0139.png",
+      "observed": "Blue team small boat or landing craft. Used as: boat, landing craft, naval unit, transport, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0140.png",
+      "observed": "Blue team large warship bristling with guns. Used as: battleship, warship, naval unit, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0141.png",
+      "observed": "Blue team submarine running on the surface. Used as: submarine, naval unit, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0142.png",
+      "observed": "Blue team infantry soldier standing with a rifle. Used as: infantry, soldier, foot unit, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0143.png",
+      "observed": "Blue team infantry soldier shouldering a heavy weapon. Used as: infantry, bazooka, anti-tank, foot unit, blue team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0144.png",
+      "observed": "Grey road running vertically. Used as: road, path, street, pavement, terrain, tile.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0145.png",
+      "observed": "Grey road segment. Used as: road, path, street, pavement, terrain, tile.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0146.png",
+      "observed": "Grey road forming a junction. Used as: road, path, street, pavement, terrain, tile.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0147.png",
+      "observed": "Grey road segment. Used as: road, path, street, pavement, terrain, tile.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0148.png",
+      "observed": "Water with a pale shoreline. Used as: coast, shore, water edge, terrain.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0149.png",
+      "observed": "Red team supply truck. Used as: truck, supply, logistics, transport unit, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0150.png",
+      "observed": "Red team transport truck loaded with crates. Used as: transport, cargo truck, supply, resupply, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0151.png",
+      "observed": "Red team armoured personnel carrier. Used as: APC, troop carrier, armoured transport, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0152.png",
+      "observed": "Red team battle tank with a forward gun. Used as: tank, armour, heavy unit, ground unit, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0153.png",
+      "observed": "Red team light recon vehicle. Used as: recon, scout, jeep, light vehicle, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0154.png",
+      "observed": "Red team fighter jet. Used as: jet, fighter, aircraft, air unit, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0155.png",
+      "observed": "Red team helicopter seen from the side. Used as: helicopter, gunship, air unit, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0156.png",
+      "observed": "Red team helicopter seen from above with its rotor spinning. Used as: helicopter, air unit, top-down, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0157.png",
+      "observed": "Red team small boat or landing craft. Used as: boat, landing craft, naval unit, transport, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0158.png",
+      "observed": "Red team large warship bristling with guns. Used as: battleship, warship, naval unit, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0159.png",
+      "observed": "Red team submarine running on the surface. Used as: submarine, naval unit, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0160.png",
+      "observed": "Red team infantry soldier standing with a rifle. Used as: infantry, soldier, foot unit, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0161.png",
+      "observed": "Red team infantry soldier shouldering a heavy weapon. Used as: infantry, bazooka, anti-tank, foot unit, red team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0162.png",
+      "observed": "Grey road segment. Used as: road, path, street, pavement, terrain, tile.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0163.png",
+      "observed": "Grey road forming a curve. Used as: road, path, street, pavement, terrain, tile.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0164.png",
+      "observed": "Grey road forming a curve. Used as: road, path, street, pavement, terrain, tile.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0165.png",
+      "observed": "Grey road forming a curve. Used as: road, path, street, pavement, terrain, tile.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0166.png",
+      "observed": "Grey road running vertically. Used as: road, path, street, pavement, terrain, tile.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0167.png",
+      "observed": "Orange team supply truck. Used as: truck, supply, logistics, transport unit, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0168.png",
+      "observed": "Orange team transport truck loaded with crates. Used as: transport, cargo truck, supply, resupply, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0169.png",
+      "observed": "Orange team armoured personnel carrier. Used as: APC, troop carrier, armoured transport, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0170.png",
+      "observed": "Orange team battle tank with a forward gun. Used as: tank, armour, heavy unit, ground unit, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0171.png",
+      "observed": "Orange team light recon vehicle. Used as: recon, scout, jeep, light vehicle, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0172.png",
+      "observed": "Orange team fighter jet. Used as: jet, fighter, aircraft, air unit, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0173.png",
+      "observed": "Orange team helicopter seen from the side. Used as: helicopter, gunship, air unit, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0174.png",
+      "observed": "Orange team helicopter seen from above with its rotor spinning. Used as: helicopter, air unit, top-down, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0175.png",
+      "observed": "Orange team small boat or landing craft. Used as: boat, landing craft, naval unit, transport, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0176.png",
+      "observed": "Orange team large warship bristling with guns. Used as: battleship, warship, naval unit, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0177.png",
+      "observed": "Orange team submarine running on the surface. Used as: submarine, naval unit, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0178.png",
+      "observed": "Orange team infantry soldier standing with a rifle. Used as: infantry, soldier, foot unit, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z",
+      "audited": true,
+      "auditedAt": "2026-09-06T11:02:10.175Z"
+    },
+    {
+      "path": "Tiles/tile_0179.png",
+      "observed": "Orange team infantry soldier shouldering a heavy weapon. Used as: infantry, bazooka, anti-tank, foot unit, orange team.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0180.png",
+      "observed": "The numeral 0 in white on a dark tile. Used as: number 0, digit, counter, HUD, unit count, label.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0181.png",
+      "observed": "The numeral 1 in white on a dark tile. Used as: number 1, digit, counter, HUD, unit count, label.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0182.png",
+      "observed": "The numeral 2 in white on a dark tile. Used as: number 2, digit, counter, HUD, unit count, label.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0183.png",
+      "observed": "The numeral 3 in white on a dark tile. Used as: number 3, digit, counter, HUD, unit count, label.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0184.png",
+      "observed": "The numeral 4 in white on a dark tile. Used as: number 4, digit, counter, HUD, unit count, label.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0185.png",
+      "observed": "The numeral 5 in white on a dark tile. Used as: number 5, digit, counter, HUD, unit count, label.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0186.png",
+      "observed": "The numeral 6 in white on a dark tile. Used as: number 6, digit, counter, HUD, unit count, label.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0187.png",
+      "observed": "The numeral 7 in white on a dark tile. Used as: number 7, digit, counter, HUD, unit count, label.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0188.png",
+      "observed": "The numeral 8 in white on a dark tile. Used as: number 8, digit, counter, HUD, unit count, label.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0189.png",
+      "observed": "The numeral 9 in white on a dark tile. Used as: number 9, digit, counter, HUD, unit count, label.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0190.png",
+      "observed": "A white question mark on a dark tile. Used as: question mark, unknown, hidden, HUD, label.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0191.png",
+      "observed": "Small card or note with a yellow face. Used as: card, note, order, item, HUD icon.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0192.png",
+      "observed": "Red fuel can. Used as: fuel, jerrycan, refuel, supply, resource icon.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0193.png",
+      "observed": "Closed padlock. Used as: lock, locked, unavailable, secured, HUD icon.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0194.png",
+      "observed": "Plain white flag on a pole. Used as: white flag, surrender, neutral, capture marker.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0195.png",
+      "observed": "Red heart. Used as: heart, health, life, hit point, HUD icon.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0196.png",
+      "observed": "White gloved hand giving a thumbs up. Used as: thumbs up, confirm, approve, ok, HUD icon.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    },
+    {
+      "path": "Tiles/tile_0197.png",
+      "observed": "Soft dithered grey speckle covering the tile. Used as: fog of war, unexplored, shroud, overlay, HUD.",
+      "style": "pixel-art",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-30T19:03:50.673Z"
+    }
+  ]
+}

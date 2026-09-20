@@ -1,0 +1,4087 @@
+{
+  "pack": "top-down-shooter",
+  "count": 583,
+  "assets": [
+    {
+      "path": "PNG/Hitman 1/hitman1_gun.png",
+      "observed": "Top-down dark-suited hitman (variant 1), holding a pistol. Used as: hitman, assassin, enemy, character, pistol, handgun, armed, aiming, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Hitman 1/hitman1_hold.png",
+      "observed": "Top-down dark-suited hitman (variant 1), holding a weapon close in both hands. Used as: hitman, assassin, enemy, character, hold, ready stance, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Hitman 1/hitman1_machine.png",
+      "observed": "Top-down dark-suited hitman (variant 1), shouldering a machine gun. Used as: hitman, assassin, enemy, character, machine gun, rifle, automatic, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Hitman 1/hitman1_reload.png",
+      "observed": "Top-down dark-suited hitman (variant 1), reloading, weapon lowered. Used as: hitman, assassin, enemy, character, reload, reloading, vulnerable, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Hitman 1/hitman1_silencer.png",
+      "observed": "Top-down dark-suited hitman (variant 1), carrying a silenced weapon. Used as: hitman, assassin, enemy, character, silenced, suppressor, stealth, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Hitman 1/hitman1_stand.png",
+      "observed": "Top-down dark-suited hitman (variant 1), standing empty-handed. Used as: hitman, assassin, enemy, character, stand, idle, unarmed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Man Blue/manBlue_gun.png",
+      "observed": "Top-down man in a blue uniform, holding a pistol. Used as: man, civilian, officer, character, pistol, handgun, armed, aiming, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Man Blue/manBlue_hold.png",
+      "observed": "Top-down man in a blue uniform, holding a weapon close in both hands. Used as: man, civilian, officer, character, hold, ready stance, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Man Blue/manBlue_machine.png",
+      "observed": "Top-down man in a blue uniform, shouldering a machine gun. Used as: man, civilian, officer, character, machine gun, rifle, automatic, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Man Blue/manBlue_reload.png",
+      "observed": "Top-down man in a blue uniform, reloading, weapon lowered. Used as: man, civilian, officer, character, reload, reloading, vulnerable, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Man Blue/manBlue_silencer.png",
+      "observed": "Top-down man in a blue uniform, carrying a silenced weapon. Used as: man, civilian, officer, character, silenced, suppressor, stealth, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Man Blue/manBlue_stand.png",
+      "observed": "Top-down man in a blue uniform, standing empty-handed. Used as: man, civilian, officer, character, stand, idle, unarmed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Man Brown/manBrown_gun.png",
+      "observed": "Top-down man in brown clothing, holding a pistol. Used as: man, civilian, character, pistol, handgun, armed, aiming, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Man Brown/manBrown_hold.png",
+      "observed": "Top-down man in brown clothing, holding a weapon close in both hands. Used as: man, civilian, character, hold, ready stance, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Man Brown/manBrown_machine.png",
+      "observed": "Top-down man in brown clothing, shouldering a machine gun. Used as: man, civilian, character, machine gun, rifle, automatic, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Man Brown/manBrown_reload.png",
+      "observed": "Top-down man in brown clothing, reloading, weapon lowered. Used as: man, civilian, character, reload, reloading, vulnerable, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Man Brown/manBrown_silencer.png",
+      "observed": "Top-down man in brown clothing, carrying a silenced weapon. Used as: man, civilian, character, silenced, suppressor, stealth, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Man Brown/manBrown_stand.png",
+      "observed": "Top-down man in brown clothing, standing empty-handed. Used as: man, civilian, character, stand, idle, unarmed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Man Old/manOld_gun.png",
+      "observed": "Top-down older man, holding a pistol. Used as: man, elderly, civilian, character, pistol, handgun, armed, aiming, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Man Old/manOld_hold.png",
+      "observed": "Top-down older man, holding a weapon close in both hands. Used as: man, elderly, civilian, character, hold, ready stance, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Man Old/manOld_machine.png",
+      "observed": "Top-down older man, shouldering a machine gun. Used as: man, elderly, civilian, character, machine gun, rifle, automatic, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Man Old/manOld_reload.png",
+      "observed": "Top-down older man, reloading, weapon lowered. Used as: man, elderly, civilian, character, reload, reloading, vulnerable, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Man Old/manOld_silencer.png",
+      "observed": "Top-down older man, carrying a silenced weapon. Used as: man, elderly, civilian, character, silenced, suppressor, stealth, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Man Old/manOld_stand.png",
+      "observed": "Top-down older man, standing empty-handed. Used as: man, elderly, civilian, character, stand, idle, unarmed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Robot 1/robot1_gun.png",
+      "observed": "Top-down robot (variant 1), holding a pistol. Used as: robot, android, machine, enemy, character, pistol, handgun, armed, aiming, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Robot 1/robot1_hold.png",
+      "observed": "Top-down robot (variant 1), holding a weapon close in both hands. Used as: robot, android, machine, enemy, character, hold, ready stance, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Robot 1/robot1_machine.png",
+      "observed": "Top-down robot (variant 1), shouldering a machine gun. Used as: robot, android, machine, enemy, character, machine gun, rifle, automatic, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Robot 1/robot1_reload.png",
+      "observed": "Top-down robot (variant 1), reloading, weapon lowered. Used as: robot, android, machine, enemy, character, reload, reloading, vulnerable, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Robot 1/robot1_silencer.png",
+      "observed": "Top-down robot (variant 1), carrying a silenced weapon. Used as: robot, android, machine, enemy, character, silenced, suppressor, stealth, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Robot 1/robot1_stand.png",
+      "observed": "Top-down robot (variant 1), standing empty-handed. Used as: robot, android, machine, enemy, character, stand, idle, unarmed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Soldier 1/soldier1_gun.png",
+      "observed": "Top-down soldier in fatigues (variant 1), holding a pistol. Used as: soldier, military, enemy, character, pistol, handgun, armed, aiming, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Soldier 1/soldier1_hold.png",
+      "observed": "Top-down soldier in fatigues (variant 1), holding a weapon close in both hands. Used as: soldier, military, enemy, character, hold, ready stance, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Soldier 1/soldier1_machine.png",
+      "observed": "Top-down soldier in fatigues (variant 1), shouldering a machine gun. Used as: soldier, military, enemy, character, machine gun, rifle, automatic, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Soldier 1/soldier1_reload.png",
+      "observed": "Top-down soldier in fatigues (variant 1), reloading, weapon lowered. Used as: soldier, military, enemy, character, reload, reloading, vulnerable, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Soldier 1/soldier1_silencer.png",
+      "observed": "Top-down soldier in fatigues (variant 1), carrying a silenced weapon. Used as: soldier, military, enemy, character, silenced, suppressor, stealth, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Soldier 1/soldier1_stand.png",
+      "observed": "Top-down soldier in fatigues (variant 1), standing empty-handed. Used as: soldier, military, enemy, character, stand, idle, unarmed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Survivor 1/survivor1_gun.png",
+      "observed": "Top-down survivor in casual clothes (variant 1), holding a pistol. Used as: survivor, civilian, player, character, pistol, handgun, armed, aiming, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Survivor 1/survivor1_hold.png",
+      "observed": "Top-down survivor in casual clothes (variant 1), holding a weapon close in both hands. Used as: survivor, civilian, player, character, hold, ready stance, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Survivor 1/survivor1_machine.png",
+      "observed": "Top-down survivor in casual clothes (variant 1), shouldering a machine gun. Used as: survivor, civilian, player, character, machine gun, rifle, automatic, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Survivor 1/survivor1_reload.png",
+      "observed": "Top-down survivor in casual clothes (variant 1), reloading, weapon lowered. Used as: survivor, civilian, player, character, reload, reloading, vulnerable, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Survivor 1/survivor1_silencer.png",
+      "observed": "Top-down survivor in casual clothes (variant 1), carrying a silenced weapon. Used as: survivor, civilian, player, character, silenced, suppressor, stealth, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Survivor 1/survivor1_stand.png",
+      "observed": "Top-down survivor in casual clothes (variant 1), standing empty-handed. Used as: survivor, civilian, player, character, stand, idle, unarmed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_01.png",
+      "observed": "Green grass ground tile. Used as: grass, lawn, ground, terrain, outdoor floor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_02.png",
+      "observed": "Green grass ground tile. Used as: grass, lawn, ground, terrain, outdoor floor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_03.png",
+      "observed": "Green grass ground tile. Used as: grass, lawn, ground, terrain, outdoor floor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_04.png",
+      "observed": "Green grass ground tile. Used as: grass, lawn, ground, terrain, outdoor floor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_05.png",
+      "observed": "Sandy brown ground tile. Used as: sand, dirt, ground, terrain, outdoor floor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_06.png",
+      "observed": "Sandy brown ground tile. Used as: sand, dirt, ground, terrain, outdoor floor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_07.png",
+      "observed": "Pale grey concrete floor tile. Used as: concrete, pavement, floor, ground, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_08.png",
+      "observed": "Pale grey concrete floor tile. Used as: concrete, pavement, floor, ground, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_09.png",
+      "observed": "Pale grey concrete floor tile. Used as: concrete, pavement, floor, ground, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_10.png",
+      "observed": "Pale grey concrete floor tile. Used as: concrete, pavement, floor, ground, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_100.png",
+      "observed": "Wooden plank floor tile. Used as: wood floor, planks, floorboards, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_101.png",
+      "observed": "Wooden plank floor tile. Used as: wood floor, planks, floorboards, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_102.png",
+      "observed": "Shop window or awning section above a wall. Used as: window, awning, shopfront, storefront, building, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_103.png",
+      "observed": "Shop window or awning section above a wall. Used as: window, awning, shopfront, storefront, building, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_104.png",
+      "observed": "Shop window or awning section above a wall. Used as: window, awning, shopfront, storefront, building, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_105.png",
+      "observed": "Shop window or awning section above a wall. Used as: window, awning, shopfront, storefront, building, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_106.png",
+      "observed": "Shop window or awning section above a wall. Used as: window, awning, shopfront, storefront, building, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_107.png",
+      "observed": "Shop window or awning section above a wall. Used as: window, awning, shopfront, storefront, building, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_109.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_11.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_110.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_111.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_112.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_113.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_114.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_115.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_116.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_117.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_118.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_119.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_12.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_120.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_121.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_122.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_123.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_124.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_125.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_126.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_127.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_128.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_129.png",
+      "observed": "Wooden crate seen from above. Used as: crate, box, cargo, prop, breakable.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_13.png",
+      "observed": "Wooden crate seen from above. Used as: crate, box, cargo, prop, breakable.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_130.png",
+      "observed": "Wooden crate seen from above. Used as: crate, box, cargo, prop, breakable.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_131.png",
+      "observed": "Blue crate or container. Used as: crate, container, box, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_132.png",
+      "observed": "Pale round barrel lid. Used as: barrel, drum, container, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_133.png",
+      "observed": "Pale square crate. Used as: crate, box, container, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_134.png",
+      "observed": "Small green plant. Used as: plant, foliage, shrub, scenery.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_136.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_137.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_138.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_139.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_14.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_140.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_141.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_142.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_143.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_144.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_145.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_146.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_147.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_148.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_149.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_15.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_150.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_151.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_152.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_153.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_154.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_155.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_156.png",
+      "observed": "Wooden crate seen from above. Used as: crate, box, cargo, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_157.png",
+      "observed": "Wooden crate seen from above. Used as: crate, box, cargo, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_158.png",
+      "observed": "Green crate or planter. Used as: crate, planter, box, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_159.png",
+      "observed": "Pale blue ice or glass panel. Used as: ice, glass, panel, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_16.png",
+      "observed": "Pale blue ice or glass panel. Used as: ice, glass, panel, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_160.png",
+      "observed": "Pale blue ice or glass panel. Used as: ice, glass, panel, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_161.png",
+      "observed": "Small screwdriver or tool. Used as: screwdriver, tool, prop, item.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_163.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_164.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_165.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_166.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_167.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_168.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_169.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_17.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_170.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_171.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_172.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_173.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_174.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_175.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_176.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_177.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_178.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_179.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_18.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_180.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_181.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_182.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_183.png",
+      "observed": "Green bush or orange rock mound. Used as: bush, shrub, rock, boulder, scenery.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_184.png",
+      "observed": "Green bush or orange rock mound. Used as: bush, shrub, rock, boulder, scenery.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_185.png",
+      "observed": "Green bush or orange rock mound. Used as: bush, shrub, rock, boulder, scenery.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_186.png",
+      "observed": "Green bush or orange rock mound. Used as: bush, shrub, rock, boulder, scenery.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_187.png",
+      "observed": "Spent bullet casings. Used as: bullet casing, shell, brass, debris, effect.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_188.png",
+      "observed": "Spent bullet casings. Used as: bullet casing, shell, brass, debris, effect.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_19.png",
+      "observed": "Blue water tile. Used as: water, pool, liquid, terrain.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_190.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_191.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_192.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_193.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_194.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_195.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_196.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_197.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_198.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_199.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_20.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_200.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_201.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_202.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_203.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_204.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_205.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_206.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_207.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_208.png",
+      "observed": "Green bush. Used as: bush, shrub, foliage, scenery.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_209.png",
+      "observed": "Green bush. Used as: bush, shrub, foliage, scenery.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_21.png",
+      "observed": "Low wooden barrier. Used as: barrier, fence, low wall, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_210.png",
+      "observed": "Small green plant. Used as: plant, foliage, scenery.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_211.png",
+      "observed": "Orange rock mound. Used as: rock, boulder, rubble, scenery.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_212.png",
+      "observed": "Orange rock mound. Used as: rock, boulder, rubble, scenery.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_213.png",
+      "observed": "Scatter of small green leaves. Used as: leaves, foliage, debris, scenery.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_214.png",
+      "observed": "White ring or rope coil. Used as: rope, ring, coil, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_215.png",
+      "observed": "White ring or rope coil. Used as: rope, ring, coil, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_217.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_218.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_219.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_22.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_220.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_221.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_222.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_223.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_224.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_225.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_226.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_227.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_228.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_229.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_23.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_230.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_231.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_232.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_233.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_234.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_235.png",
+      "observed": "Green bush or orange rock. Used as: bush, rock, boulder, scenery.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_236.png",
+      "observed": "Green bush or orange rock. Used as: bush, rock, boulder, scenery.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_237.png",
+      "observed": "Pale blue crystal or ice chunk. Used as: crystal, ice, gem, rock, scenery.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_238.png",
+      "observed": "Pale blue crystal or ice chunk. Used as: crystal, ice, gem, rock, scenery.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_239.png",
+      "observed": "Pale blue crystal or ice chunk. Used as: crystal, ice, gem, rock, scenery.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_24.png",
+      "observed": "Top-down shooter tileset piece -- wall, floor or trim. Used as: tileset, wall, floor, trim, level piece, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_240.png",
+      "observed": "Small green plant. Used as: plant, foliage, scenery.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_241.png",
+      "observed": "Knife with a pale handle. Used as: knife, blade, melee weapon, pickup.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_242.png",
+      "observed": "Stack of orange crates. Used as: crates, boxes, cargo, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_243.png",
+      "observed": "Dark rounded barrier or cover. Used as: barrier, cover, obstacle, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_244.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_245.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_246.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_247.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_248.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_249.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_25.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_250.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_251.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_252.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_253.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_254.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_255.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_256.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_257.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_258.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_259.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_26.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_260.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_261.png",
+      "observed": "Top-down building wall segment, orange trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_262.png",
+      "observed": "Pale blue ice or glass shard. Used as: ice shard, glass, crystal, debris.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_263.png",
+      "observed": "Pale blue ice or glass shard. Used as: ice shard, glass, crystal, debris.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_264.png",
+      "observed": "Pale blue ice or glass shard. Used as: ice shard, glass, crystal, debris.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_265.png",
+      "observed": "Wooden plank or beam. Used as: plank, beam, wood, debris, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_266.png",
+      "observed": "Wooden plank or beam. Used as: plank, beam, wood, debris, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_267.png",
+      "observed": "Cigarette and ashtray. Used as: cigarette, ashtray, litter, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_268.png",
+      "observed": "Cigarette and ashtray. Used as: cigarette, ashtray, litter, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_269.png",
+      "observed": "White kettle or jug. Used as: kettle, jug, appliance, kitchen, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_270.png",
+      "observed": "White bath or basin seen from above. Used as: bath, basin, bathroom, fitting.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_271.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_272.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_273.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_274.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_275.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_276.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_277.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_278.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_279.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_28.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_280.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_281.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_282.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_283.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_284.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_285.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_286.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_287.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_288.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_289.png",
+      "observed": "Orange crate or pale glass shard. Used as: crate, glass shard, debris, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_29.png",
+      "observed": "Orange crate or pale glass shard. Used as: crate, glass shard, debris, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_290.png",
+      "observed": "Orange crate or pale glass shard. Used as: crate, glass shard, debris, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_291.png",
+      "observed": "Orange crate or pale glass shard. Used as: crate, glass shard, debris, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_292.png",
+      "observed": "Orange crate or pale glass shard. Used as: crate, glass shard, debris, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_293.png",
+      "observed": "Orange crate or pale glass shard. Used as: crate, glass shard, debris, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_294.png",
+      "observed": "Kitchen worktop with a pale surface. Used as: worktop, counter, kitchen, fitting.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_295.png",
+      "observed": "Kitchen worktop with a pale surface. Used as: worktop, counter, kitchen, fitting.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_296.png",
+      "observed": "Grey cooker with hob rings. Used as: cooker, stove, hob, kitchen, appliance.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_297.png",
+      "observed": "White cooker with four hob rings. Used as: cooker, stove, hob, kitchen, appliance.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_298.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_299.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_30.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_300.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_301.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_302.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_303.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_304.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_305.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_306.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_307.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_308.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_309.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_31.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_310.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_311.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_312.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_313.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_314.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_315.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_316.png",
+      "observed": "Orange fuel drum seen from above. Used as: fuel drum, barrel, explosive, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_317.png",
+      "observed": "Orange fuel drum seen from above. Used as: fuel drum, barrel, explosive, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_318.png",
+      "observed": "Orange fuel drum seen from above. Used as: fuel drum, barrel, explosive, prop.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_319.png",
+      "observed": "Dark spill or blood splatter. Used as: blood, spill, oil, stain, splatter, decal.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_32.png",
+      "observed": "Dark spill or blood splatter. Used as: blood, spill, oil, stain, splatter, decal.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_320.png",
+      "observed": "Dark spill or blood splatter. Used as: blood, spill, oil, stain, splatter, decal.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_321.png",
+      "observed": "Pale worktop or panel. Used as: worktop, panel, surface, fitting.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_322.png",
+      "observed": "Pale worktop or panel. Used as: worktop, panel, surface, fitting.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_323.png",
+      "observed": "White sink or basin. Used as: sink, basin, kitchen, bathroom, fitting.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_324.png",
+      "observed": "Dark hob with four rings. Used as: hob, stove, cooker, kitchen, appliance.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_325.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_326.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_327.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_328.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_329.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_33.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_330.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_331.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_332.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_333.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_334.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_335.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_336.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_337.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_338.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_339.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_34.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_340.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_341.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_342.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_343.png",
+      "observed": "Orange room floor with a pale border. Used as: floor, room, orange, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_344.png",
+      "observed": "Orange room floor with a pale border. Used as: floor, room, orange, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_345.png",
+      "observed": "Orange room floor with a pale border. Used as: floor, room, orange, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_346.png",
+      "observed": "Green room floor with a pale border. Used as: floor, room, green, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_347.png",
+      "observed": "Green room floor with a pale border. Used as: floor, room, green, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_348.png",
+      "observed": "Green room floor with a pale border. Used as: floor, room, green, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_349.png",
+      "observed": "Plain tan floor panel. Used as: floor, panel, tan, plain, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_35.png",
+      "observed": "Top-down shooter tileset piece -- wall, floor or trim. Used as: tileset, wall, floor, trim, level piece, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_350.png",
+      "observed": "Plain tan floor panel. Used as: floor, panel, tan, plain, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_351.png",
+      "observed": "Plain tan floor panel. Used as: floor, panel, tan, plain, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_352.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_353.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_354.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_355.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_356.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_357.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_358.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_359.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_36.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_360.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_361.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_362.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_363.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_364.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_365.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_366.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_367.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_368.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_369.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_37.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_370.png",
+      "observed": "Orange room floor with a pale border. Used as: floor, room, orange, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_371.png",
+      "observed": "Orange room floor with a pale border. Used as: floor, room, orange, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_372.png",
+      "observed": "Orange room floor with a pale border. Used as: floor, room, orange, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_373.png",
+      "observed": "Green room floor with a pale border. Used as: floor, room, green, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_374.png",
+      "observed": "Green room floor with a pale border. Used as: floor, room, green, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_375.png",
+      "observed": "Green room floor with a pale border. Used as: floor, room, green, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_376.png",
+      "observed": "Plain tan floor panel. Used as: floor, panel, tan, plain, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_377.png",
+      "observed": "Plain tan floor panel. Used as: floor, panel, tan, plain, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_378.png",
+      "observed": "Plain tan floor panel. Used as: floor, panel, tan, plain, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_379.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_38.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_380.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_381.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_382.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_383.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_384.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_385.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_386.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_387.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_388.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_389.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_39.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_390.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_391.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_392.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_393.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_394.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_395.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_396.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_397.png",
+      "observed": "Orange room floor with a yellow border. Used as: floor, room, orange, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_398.png",
+      "observed": "Orange room floor with a yellow border. Used as: floor, room, orange, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_399.png",
+      "observed": "Orange room floor with a yellow border. Used as: floor, room, orange, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_40.png",
+      "observed": "Top-down shooter tileset piece -- wall, floor or trim. Used as: tileset, wall, floor, trim, level piece, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_400.png",
+      "observed": "Green room floor with a pale border. Used as: floor, room, green, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_401.png",
+      "observed": "Green room floor with a pale border. Used as: floor, room, green, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_402.png",
+      "observed": "Green room floor with a pale border. Used as: floor, room, green, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_403.png",
+      "observed": "Plain tan floor panel. Used as: floor, panel, tan, plain, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_404.png",
+      "observed": "Plain tan floor panel. Used as: floor, panel, tan, plain, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_405.png",
+      "observed": "Plain tan floor panel. Used as: floor, panel, tan, plain, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_406.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_407.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_408.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_409.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_41.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_410.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_411.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_412.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_413.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_414.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_415.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_416.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_417.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_418.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_419.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_42.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_420.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_421.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_422.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_423.png",
+      "observed": "Top-down building wall segment, pale teal trim -- corner, edge, doorway or fill piece. Used as: wall, room, interior, building, tileset, level geometry, corner, edge, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_424.png",
+      "observed": "Orange room floor with a yellow border. Used as: floor, room, orange, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_425.png",
+      "observed": "Orange room floor with a yellow border. Used as: floor, room, orange, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_426.png",
+      "observed": "Orange room floor with a yellow border. Used as: floor, room, orange, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_427.png",
+      "observed": "Green room floor with a pale border. Used as: floor, room, green, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_428.png",
+      "observed": "Green room floor with a pale border. Used as: floor, room, green, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_429.png",
+      "observed": "Green room floor with a pale border. Used as: floor, room, green, zone, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_43.png",
+      "observed": "Top-down shooter tileset piece -- wall, floor or trim. Used as: tileset, wall, floor, trim, level piece, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_430.png",
+      "observed": "Top-down shooter tileset piece -- wall, floor or trim. Used as: tileset, wall, floor, trim, level piece, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_431.png",
+      "observed": "Top-down shooter tileset piece -- wall, floor or trim. Used as: tileset, wall, floor, trim, level piece, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_432.png",
+      "observed": "Top-down shooter tileset piece -- wall, floor or trim. Used as: tileset, wall, floor, trim, level piece, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_433.png",
+      "observed": "Top-down shooter tileset piece -- wall, floor or trim. Used as: tileset, wall, floor, trim, level piece, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_434.png",
+      "observed": "Top-down shooter tileset piece -- wall, floor or trim. Used as: tileset, wall, floor, trim, level piece, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_435.png",
+      "observed": "Top-down shooter tileset piece -- wall, floor or trim. Used as: tileset, wall, floor, trim, level piece, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_436.png",
+      "observed": "Top-down shooter tileset piece -- wall, floor or trim. Used as: tileset, wall, floor, trim, level piece, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_437.png",
+      "observed": "Top-down shooter tileset piece -- wall, floor or trim. Used as: tileset, wall, floor, trim, level piece, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_438.png",
+      "observed": "Top-down shooter tileset piece -- wall, floor or trim. Used as: tileset, wall, floor, trim, level piece, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_439.png",
+      "observed": "Top-down shooter tileset piece -- wall, floor or trim. Used as: tileset, wall, floor, trim, level piece, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_44.png",
+      "observed": "Top-down shooter tileset piece -- wall, floor or trim. Used as: tileset, wall, floor, trim, level piece, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_440.png",
+      "observed": "Wooden table seen from above. Used as: table, desk, furniture, indoor, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_441.png",
+      "observed": "Wooden table seen from above. Used as: table, desk, furniture, indoor, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_442.png",
+      "observed": "Wooden table seen from above. Used as: table, desk, furniture, indoor, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_443.png",
+      "observed": "Wooden table seen from above. Used as: table, desk, furniture, indoor, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_444.png",
+      "observed": "Wooden table seen from above. Used as: table, desk, furniture, indoor, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_445.png",
+      "observed": "Wooden table seen from above. Used as: table, desk, furniture, indoor, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_446.png",
+      "observed": "Wooden table seen from above. Used as: table, desk, furniture, indoor, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_447.png",
+      "observed": "Green sofa seen from above. Used as: sofa, couch, seating, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_448.png",
+      "observed": "Green sofa seen from above. Used as: sofa, couch, seating, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_449.png",
+      "observed": "Green sofa seen from above. Used as: sofa, couch, seating, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_45.png",
+      "observed": "Wooden table seen from above. Used as: table, desk, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_450.png",
+      "observed": "Green armchair seen from above. Used as: armchair, chair, seating, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_451.png",
+      "observed": "Blue armchair seen from above. Used as: armchair, chair, seating, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_452.png",
+      "observed": "Small wooden stool or side table. Used as: stool, side table, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_453.png",
+      "observed": "Plain tan floor or table surface. Used as: table, surface, floor, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_454.png",
+      "observed": "Plain tan floor or table surface. Used as: table, surface, floor, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_455.png",
+      "observed": "Plain tan floor or table surface. Used as: table, surface, floor, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_456.png",
+      "observed": "Plain tan floor or table surface. Used as: table, surface, floor, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_457.png",
+      "observed": "Plain tan floor or table surface. Used as: table, surface, floor, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_46.png",
+      "observed": "Brick wall section seen from above. Used as: brick wall, wall, masonry, building.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_460.png",
+      "observed": "Pale glass panel or window pane. Used as: glass, window, pane, partition, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_461.png",
+      "observed": "Pale glass panel or window pane. Used as: glass, window, pane, partition, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_462.png",
+      "observed": "Pale glass panel or window pane. Used as: glass, window, pane, partition, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_463.png",
+      "observed": "Pale glass panel or window pane. Used as: glass, window, pane, partition, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_464.png",
+      "observed": "Pale glass panel or window pane. Used as: glass, window, pane, partition, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_465.png",
+      "observed": "Pale glass panel or window pane. Used as: glass, window, pane, partition, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_466.png",
+      "observed": "Wooden counter or shelf run. Used as: counter, shelf, worktop, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_467.png",
+      "observed": "Wooden counter or shelf run. Used as: counter, shelf, worktop, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_468.png",
+      "observed": "Wooden counter or shelf run. Used as: counter, shelf, worktop, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_469.png",
+      "observed": "Wooden counter or shelf run. Used as: counter, shelf, worktop, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_47.png",
+      "observed": "Wooden counter or shelf run. Used as: counter, shelf, worktop, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_470.png",
+      "observed": "Wooden counter or shelf run. Used as: counter, shelf, worktop, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_471.png",
+      "observed": "Wooden counter or shelf run. Used as: counter, shelf, worktop, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_472.png",
+      "observed": "Wooden counter or shelf run. Used as: counter, shelf, worktop, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_473.png",
+      "observed": "Wooden counter or shelf run. Used as: counter, shelf, worktop, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_474.png",
+      "observed": "Orange sofa or armchair seen from above. Used as: sofa, armchair, couch, seating, furniture.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_475.png",
+      "observed": "Orange sofa or armchair seen from above. Used as: sofa, armchair, couch, seating, furniture.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_476.png",
+      "observed": "Orange sofa or armchair seen from above. Used as: sofa, armchair, couch, seating, furniture.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_477.png",
+      "observed": "Orange sofa or armchair seen from above. Used as: sofa, armchair, couch, seating, furniture.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_478.png",
+      "observed": "Orange sofa or armchair seen from above. Used as: sofa, armchair, couch, seating, furniture.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_479.png",
+      "observed": "Round tan rug or table top. Used as: rug, round table, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_48.png",
+      "observed": "Green pool or billiard table. Used as: pool table, billiards, snooker, furniture, games.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_480.png",
+      "observed": "Grey table or counter with a wooden edge. Used as: table, counter, desk, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_481.png",
+      "observed": "Grey table or counter with a wooden edge. Used as: table, counter, desk, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_482.png",
+      "observed": "Grey table or counter with a wooden edge. Used as: table, counter, desk, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_483.png",
+      "observed": "Grey table or counter with a wooden edge. Used as: table, counter, desk, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_484.png",
+      "observed": "Grey table or counter with a wooden edge. Used as: table, counter, desk, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_487.png",
+      "observed": "Pale glass partition or window run. Used as: glass, window, partition, divider, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_488.png",
+      "observed": "Pale glass partition or window run. Used as: glass, window, partition, divider, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_489.png",
+      "observed": "Pale glass partition or window run. Used as: glass, window, partition, divider, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_49.png",
+      "observed": "Pale glass partition or window run. Used as: glass, window, partition, divider, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_490.png",
+      "observed": "Pale glass partition or window run. Used as: glass, window, partition, divider, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_491.png",
+      "observed": "Pale glass partition or window run. Used as: glass, window, partition, divider, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_492.png",
+      "observed": "Pale glass partition or window run. Used as: glass, window, partition, divider, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_493.png",
+      "observed": "Pale glass partition or window run. Used as: glass, window, partition, divider, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_494.png",
+      "observed": "Pale glass partition or window run. Used as: glass, window, partition, divider, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_495.png",
+      "observed": "Pale glass partition or window run. Used as: glass, window, partition, divider, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_496.png",
+      "observed": "Pale glass partition or window run. Used as: glass, window, partition, divider, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_497.png",
+      "observed": "Pale glass partition or window run. Used as: glass, window, partition, divider, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_498.png",
+      "observed": "Pale glass partition or window run. Used as: glass, window, partition, divider, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_499.png",
+      "observed": "Pale glass partition or window run. Used as: glass, window, partition, divider, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_50.png",
+      "observed": "Pale glass partition or window run. Used as: glass, window, partition, divider, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_500.png",
+      "observed": "Pale glass partition or window run. Used as: glass, window, partition, divider, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_501.png",
+      "observed": "Dark bed or bench seen from above. Used as: bed, bench, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_502.png",
+      "observed": "Dark bed or bench seen from above. Used as: bed, bench, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_503.png",
+      "observed": "Dark bed or bench seen from above. Used as: bed, bench, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_504.png",
+      "observed": "Dark bed or bench seen from above. Used as: bed, bench, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_505.png",
+      "observed": "Dark bed or bench seen from above. Used as: bed, bench, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_506.png",
+      "observed": "Round tan table top. Used as: round table, table, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_507.png",
+      "observed": "Tan counter or bench. Used as: counter, bench, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_508.png",
+      "observed": "Plain tan floor panel. Used as: floor, panel, tan, plain, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_509.png",
+      "observed": "Plain tan floor panel. Used as: floor, panel, tan, plain, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_51.png",
+      "observed": "Counter, glass panel or coloured surface. Used as: counter, glass, panel, surface, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_510.png",
+      "observed": "Plain tan floor panel. Used as: floor, panel, tan, plain, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_511.png",
+      "observed": "Counter, glass panel or coloured surface. Used as: counter, glass, panel, surface, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_514.png",
+      "observed": "Counter, glass panel or coloured surface. Used as: counter, glass, panel, surface, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_515.png",
+      "observed": "Counter, glass panel or coloured surface. Used as: counter, glass, panel, surface, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_516.png",
+      "observed": "Counter, glass panel or coloured surface. Used as: counter, glass, panel, surface, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_517.png",
+      "observed": "Counter, glass panel or coloured surface. Used as: counter, glass, panel, surface, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_518.png",
+      "observed": "Counter, glass panel or coloured surface. Used as: counter, glass, panel, surface, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_519.png",
+      "observed": "Counter, glass panel or coloured surface. Used as: counter, glass, panel, surface, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_52.png",
+      "observed": "Counter, glass panel or coloured surface. Used as: counter, glass, panel, surface, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_520.png",
+      "observed": "Counter, glass panel or coloured surface. Used as: counter, glass, panel, surface, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_521.png",
+      "observed": "Counter, glass panel or coloured surface. Used as: counter, glass, panel, surface, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_522.png",
+      "observed": "Counter, glass panel or coloured surface. Used as: counter, glass, panel, surface, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_523.png",
+      "observed": "Counter, glass panel or coloured surface. Used as: counter, glass, panel, surface, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_524.png",
+      "observed": "Counter, glass panel or coloured surface. Used as: counter, glass, panel, surface, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_525.png",
+      "observed": "Counter, glass panel or coloured surface. Used as: counter, glass, panel, surface, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_526.png",
+      "observed": "Counter, glass panel or coloured surface. Used as: counter, glass, panel, surface, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_527.png",
+      "observed": "Counter, glass panel or coloured surface. Used as: counter, glass, panel, surface, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_528.png",
+      "observed": "Orange or tan armchair seen from above. Used as: armchair, chair, seating, furniture.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_529.png",
+      "observed": "Orange or tan armchair seen from above. Used as: armchair, chair, seating, furniture.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_53.png",
+      "observed": "Orange or tan armchair seen from above. Used as: armchair, chair, seating, furniture.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_530.png",
+      "observed": "Orange or tan armchair seen from above. Used as: armchair, chair, seating, furniture.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_531.png",
+      "observed": "Orange or tan armchair seen from above. Used as: armchair, chair, seating, furniture.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_532.png",
+      "observed": "Dark bench or sofa seen from above. Used as: bench, sofa, seating, furniture.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_533.png",
+      "observed": "Dark bench or sofa seen from above. Used as: bench, sofa, seating, furniture.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_534.png",
+      "observed": "Chair or bench seen from above. Used as: chair, bench, seating, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_535.png",
+      "observed": "Chair or bench seen from above. Used as: chair, bench, seating, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_536.png",
+      "observed": "Chair or bench seen from above. Used as: chair, bench, seating, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_537.png",
+      "observed": "Chair or bench seen from above. Used as: chair, bench, seating, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_538.png",
+      "observed": "Chair or bench seen from above. Used as: chair, bench, seating, furniture, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_55.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_56.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_57.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_58.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_59.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_60.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_61.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_62.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_63.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_64.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_65.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_66.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_67.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_68.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_69.png",
+      "observed": "Brick paving or wooden decking tile. Used as: brick, paving, decking, floor, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_70.png",
+      "observed": "Brick paving or wooden decking tile. Used as: brick, paving, decking, floor, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_71.png",
+      "observed": "Brick paving or wooden decking tile. Used as: brick, paving, decking, floor, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_72.png",
+      "observed": "Brick paving or wooden decking tile. Used as: brick, paving, decking, floor, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_73.png",
+      "observed": "Brick paving or wooden decking tile. Used as: brick, paving, decking, floor, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_74.png",
+      "observed": "Brick paving or wooden decking tile. Used as: brick, paving, decking, floor, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_75.png",
+      "observed": "Flat green floor zone. Used as: green floor, zone, carpet, indoor, marker.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_76.png",
+      "observed": "Flat green floor zone. Used as: green floor, zone, carpet, indoor, marker.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_77.png",
+      "observed": "Flat green floor zone. Used as: green floor, zone, carpet, indoor, marker.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_78.png",
+      "observed": "Flat orange floor zone. Used as: orange floor, zone, carpet, indoor, marker.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_79.png",
+      "observed": "Flat orange floor zone. Used as: orange floor, zone, carpet, indoor, marker.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_80.png",
+      "observed": "Flat orange floor zone. Used as: orange floor, zone, carpet, indoor, marker.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_82.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_83.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_84.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_85.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_86.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_87.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_88.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_89.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_90.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_91.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_92.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_93.png",
+      "observed": "Dark asphalt road tile with painted lane markings. Used as: road, asphalt, tarmac, lane marking, street, outdoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_94.png",
+      "observed": "Dark floor tile with a small marking. Used as: floor, tile, marker, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_95.png",
+      "observed": "Dark floor tile with a small marking. Used as: floor, tile, marker, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_96.png",
+      "observed": "Brick or wooden floor tile. Used as: brick floor, wood floor, paving, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_97.png",
+      "observed": "Brick or wooden floor tile. Used as: brick floor, wood floor, paving, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_98.png",
+      "observed": "Brick or wooden floor tile. Used as: brick floor, wood floor, paving, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Tiles/tile_99.png",
+      "observed": "Brick or wooden floor tile. Used as: brick floor, wood floor, paving, indoor.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/Woman Green/womanGreen_gun.png",
+      "observed": "Top-down woman in green, holding a pistol. Used as: woman, civilian, character, pistol, handgun, armed, aiming, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Woman Green/womanGreen_hold.png",
+      "observed": "Top-down woman in green, holding a weapon close in both hands. Used as: woman, civilian, character, hold, ready stance, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Woman Green/womanGreen_machine.png",
+      "observed": "Top-down woman in green, shouldering a machine gun. Used as: woman, civilian, character, machine gun, rifle, automatic, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Woman Green/womanGreen_reload.png",
+      "observed": "Top-down woman in green, reloading, weapon lowered. Used as: woman, civilian, character, reload, reloading, vulnerable, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Woman Green/womanGreen_silencer.png",
+      "observed": "Top-down woman in green, carrying a silenced weapon. Used as: woman, civilian, character, silenced, suppressor, stealth, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Woman Green/womanGreen_stand.png",
+      "observed": "Top-down woman in green, standing empty-handed. Used as: woman, civilian, character, stand, idle, unarmed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Zombie 1/zoimbie1_gun.png",
+      "observed": "Top-down shambling zombie (variant 1), holding a pistol. Used as: zombie, undead, enemy, monster, character, pistol, handgun, armed, aiming, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Zombie 1/zoimbie1_hold.png",
+      "observed": "Top-down shambling zombie (variant 1), holding a weapon close in both hands. Used as: zombie, undead, enemy, monster, character, hold, ready stance, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Zombie 1/zoimbie1_machine.png",
+      "observed": "Top-down shambling zombie (variant 1), shouldering a machine gun. Used as: zombie, undead, enemy, monster, character, machine gun, rifle, automatic, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Zombie 1/zoimbie1_reload.png",
+      "observed": "Top-down shambling zombie (variant 1), reloading, weapon lowered. Used as: zombie, undead, enemy, monster, character, reload, reloading, vulnerable, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Zombie 1/zoimbie1_silencer.png",
+      "observed": "Top-down shambling zombie (variant 1), carrying a silenced weapon. Used as: zombie, undead, enemy, monster, character, silenced, suppressor, stealth, armed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/Zombie 1/zoimbie1_stand.png",
+      "observed": "Top-down shambling zombie (variant 1), standing empty-handed. Used as: zombie, undead, enemy, monster, character, stand, idle, unarmed, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:08:59.161Z"
+    },
+    {
+      "path": "PNG/weapon_gun.png",
+      "observed": "Dark firearm lying flat, seen from above. Used as: gun, weapon, firearm, pickup, dropped weapon, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/weapon_machine.png",
+      "observed": "Dark firearm lying flat, seen from above. Used as: gun, weapon, firearm, pickup, dropped weapon, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "PNG/weapon_silencer.png",
+      "observed": "Dark firearm lying flat, seen from above. Used as: gun, weapon, firearm, pickup, dropped weapon, top-down.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "Preview.png",
+      "observed": "Pack preview image showing the tileset in use. Used as: preview, sample, pack overview, reference.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    },
+    {
+      "path": "Sample.png",
+      "observed": "Pack preview image showing the tileset in use. Used as: preview, sample, pack overview, reference.",
+      "style": "flat-vector",
+      "model": "claude-opus-5 (in-session)",
+      "at": "2026-08-31T15:07:37.045Z"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kenney Asset Index</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0f0f1a; --panel: #16162a; --card: #1a1a2e; --line: #2a2a3e;
+    --text: #e6e6ef; --dim: #8a8aa0; --faint: #5a5a70;
+    --accent: #10b981; --violet: #7c6ce0; --amber: #f59e0b; --rose: #f43f5e;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font: 14px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .pixel { font-family: "Press Start 2P", monospace; }
+  code { font-family: ui-monospace, "Cascadia Code", Consolas, monospace; font-size: .9em; }
+
+  header {
+    border-bottom: 1px solid var(--line); background: var(--panel);
+    padding: 18px 24px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  }
+  header h1 { font-family: "Press Start 2P", monospace; font-size: 15px; color: var(--accent); }
+  header .sub { color: var(--faint); font-size: 12px; }
+  header .spacer { flex: 1; }
+  header a { color: var(--amber); text-decoration: none; font-size: 12px; }
+  header a:hover { text-decoration: underline; }
+
+  main { max-width: 1500px; margin: 0 auto; padding: 20px 24px 60px; }
+
+  .statbar { display: flex; gap: 22px; flex-wrap: wrap; color: var(--dim); font-size: 13px; margin-bottom: 18px; }
+  .statbar b { color: var(--text); font-weight: 600; }
+  .warnText { color: var(--amber); }
+
+  .tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); margin-bottom: 18px; }
+  .tab {
+    background: none; border: none; border-bottom: 2px solid transparent;
+    color: var(--dim); padding: 9px 16px; cursor: pointer; font-size: 14px; font-family: inherit;
+  }
+  .tab:hover { color: var(--text); }
+  .tab.on { color: var(--accent); border-bottom-color: var(--accent); }
+
+  .controls { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 18px; }
+  .search {
+    flex: 1; min-width: 260px; background: var(--card); border: 1px solid var(--line);
+    border-radius: 8px; padding: 9px 13px; color: var(--text); font: inherit; outline: none;
+  }
+  .search:focus { border-color: var(--violet); }
+  select {
+    background: var(--card); border: 1px solid var(--line); border-radius: 8px;
+    padding: 9px 11px; color: var(--text); font: inherit; outline: none; cursor: pointer;
+  }
+  .check { color: var(--dim); font-size: 13px; display: flex; align-items: center; gap: 6px; cursor: pointer; }
+  .chips { display: flex; gap: 5px; flex-wrap: wrap; }
+  .chip {
+    background: var(--card); border: 1px solid var(--line); color: var(--dim);
+    padding: 6px 11px; border-radius: 999px; cursor: pointer; font: inherit; font-size: 12.5px;
+  }
+  .chip:hover { color: var(--text); }
+  .chip.on { background: var(--violet); border-color: var(--violet); color: #fff; }
+  .count { color: var(--faint); font-size: 12.5px; margin-left: auto; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 12px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 12px; display: flex; gap: 12px; align-items: flex-start;
+  }
+  .card.installed { border-color: #1d6b52; }
+  .card .thumb {
+    width: 62px; height: 62px; border-radius: 8px; background: #23233a;
+    flex-shrink: 0; overflow: hidden; display: flex; align-items: center; justify-content: center;
+  }
+  .card .thumb img { width: 100%; height: 100%; object-fit: contain; image-rendering: pixelated; }
+  .card .body { flex: 1; min-width: 0; }
+  .card .title { font-weight: 600; font-size: 14px; }
+  .card .meta { color: var(--faint); font-size: 12px; margin-top: 2px; }
+  .tags { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 6px; }
+  .tags span { color: var(--violet); font-size: 11px; background: #221f3a; padding: 1px 6px; border-radius: 4px; }
+  .status { margin-top: 7px; display: flex; gap: 5px; flex-wrap: wrap; }
+  .badge { font-size: 11px; padding: 2px 7px; border-radius: 4px; background: #23233a; color: var(--dim); }
+  .badge.ok { background: #14372c; color: #4ade80; }
+  .badge.warn { background: #3a2f16; color: var(--amber); }
+  .card .actions { display: flex; flex-direction: column; gap: 5px; flex-shrink: 0; }
+
+  .btn {
+    background: var(--violet); color: #fff; border: none; border-radius: 7px;
+    padding: 7px 13px; cursor: pointer; font: inherit; font-size: 12.5px; white-space: nowrap;
+  }
+  .btn:hover:not(:disabled) { filter: brightness(1.12); }
+  .btn:disabled { opacity: .45; cursor: default; }
+  .btn.ghost { background: transparent; border: 1px solid var(--line); color: var(--dim); }
+
+  .split { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  @media (min-width: 1100px) { .split:has(.detail) { grid-template-columns: 1fr 330px; } }
+
+  .sprites { display: grid; grid-template-columns: repeat(auto-fill, minmax(124px, 1fr)); gap: 8px; align-content: start; }
+  .sprite {
+    position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 9px;
+    padding: 8px 6px 7px; cursor: pointer; font: inherit; color: inherit;
+    display: flex; flex-direction: column; align-items: center; gap: 5px; text-align: center;
+  }
+  .sprite:hover { border-color: var(--violet); }
+  .sprite.sel { border-color: var(--accent); background: #15241f; }
+  .sprite .img {
+    width: 100%; height: 78px; display: flex; align-items: center; justify-content: center;
+    border-radius: 6px;
+    background-color: #6e6e78;
+    background-image:
+      linear-gradient(45deg, #5c5c66 25%, transparent 25%, transparent 75%, #5c5c66 75%),
+      linear-gradient(45deg, #5c5c66 25%, transparent 25%, transparent 75%, #5c5c66 75%);
+    background-size: 14px 14px; background-position: 0 0, 7px 7px;
+  }
+  /* object-fit contain scales small sprites UP to fill the tile; max-width
+     alone only ever shrinks, so a 16x16 tile sat at 16px in a 78px box. */
+  .sprite .img img { width: 100%; height: 100%; object-fit: contain; padding: 4px; image-rendering: pixelated; }
+  .sprite .cap {
+    font-size: 11px; color: var(--text); max-width: 100%;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .sprite .sub { font-size: 10px; color: var(--faint); }
+  .sprite .dot {
+    position: absolute; top: 6px; right: 6px; width: 7px; height: 7px;
+    border-radius: 50%; background: var(--accent);
+  }
+
+  .detail {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 14px; align-self: start; position: sticky; top: 16px;
+  }
+  .detail .preview {
+    height: 190px; display: flex; align-items: center; justify-content: center;
+    border-radius: 8px; margin-bottom: 12px;
+    background-color: #6e6e78;
+    background-image:
+      linear-gradient(45deg, #5c5c66 25%, transparent 25%, transparent 75%, #5c5c66 75%),
+      linear-gradient(45deg, #5c5c66 25%, transparent 25%, transparent 75%, #5c5c66 75%);
+    background-size: 18px 18px; background-position: 0 0, 9px 9px;
+  }
+  .detail .preview img { width: 100%; height: 100%; object-fit: contain; padding: 10px; image-rendering: pixelated; }
+  .obs { font-size: 13px; line-height: 1.5; margin-bottom: 12px; }
+  .obs.dim { color: var(--faint); font-style: italic; }
+  .detail dl { display: grid; grid-template-columns: 74px 1fr; gap: 3px 10px; font-size: 12.5px; }
+  .detail dt { color: var(--faint); }
+  .detail dd { color: var(--text); overflow-wrap: anywhere; }
+  .swatches { display: flex; gap: 4px; margin-top: 12px; }
+  .swatches i { width: 26px; height: 26px; border-radius: 5px; border: 1px solid var(--line); }
+  .cli {
+    display: block; margin-top: 13px; padding: 8px 10px; background: #101020;
+    border: 1px solid var(--line); border-radius: 6px; color: var(--accent);
+    font-size: 11.5px; overflow-x: auto; white-space: nowrap;
+  }
+  .empty { color: var(--faint); padding: 40px 0; text-align: center; }
+  .more { display: flex; align-items: center; gap: 12px; justify-content: center; padding: 22px 0 6px; }
+  .more .count { margin-left: 0; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Kenney Asset Index</h1>
+    <span class="sub">CC0 game art, indexed and searchable</span>
+    <span class="spacer"></span>
+    <a href="https://kenney.nl/donate" target="_blank" rel="noopener">♥ Donate to Kenney</a>
+    <a href="https://kenney.nl" target="_blank" rel="noopener">kenney.nl</a>
+  </header>
+  <main><div id="app"></div></main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

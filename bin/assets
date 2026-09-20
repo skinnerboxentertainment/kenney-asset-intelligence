@@ -1,0 +1,269 @@
+#!/usr/bin/env node
+import { parseArgs } from "node:util"
+import { openDb, getMeta } from "../lib/db.mjs"
+import { assetFile, assetsRoot, dbPath } from "../lib/config.mjs"
+import { searchAssets } from "../lib/search.mjs"
+
+const USAGE = `
+assets -- query the Kenney asset index
+
+  assets catalog [--all] [--packs a,b]        refresh catalog from kenney.nl
+  assets catalog gen                          regenerate src/kenney/catalog.ts
+  assets build   [--packs a,b] [--fts-only]   build/refresh the index
+  assets analyze [--packs a,b] [--force]      structural pass (sharp)
+  assets render  <pack> [--steps N]           render cardinal views of 3D
+                 [--size 512] [--elevation D]  models (needs Blender)
+  assets sheet   <ids> --out f.png            composite a contact sheet
+  assets search  <query> [filters]            find candidate assets
+  assets show    <id>                         full record for one asset
+  assets migrate-vision [--dir <path>]        import legacy Codex descriptions
+  assets enrich  [--submit] [--collect <id>]  vision tier (default: plan only)
+  assets descriptions [import] [--packs a,b]  export/import descriptions as
+                                              committed JSON (the one tier
+                                              that cannot be regenerated)
+  assets audit   <ids|pack:path ...>          mark descriptions as checked by eye
+  assets eval    [--validate] [--verbose]     recall@10 by tier
+  assets install <pack|ids> --to <dir>        copy assets into a project
+                 [--manifest] [--flat]        + a typed manifest
+  assets stats                                index summary
+
+search filters:
+  --role <r>        character|enemy|tile|background|ui|effect|pickup|weapon|audio
+  --pack <slug>     restrict to one pack
+  --style <s>       1-bit|indexed|pixel-art|full-color
+  --kind <k>        image|audio            (default: image)
+  --min-size <n>    minimum width and height in px
+  --max-size <n>    maximum width and height in px
+  --tileable        only assets whose edges match (needs: assets analyze)
+  --described       only assets that carry a description
+  --undescribed     only assets that do not -- what still needs a pass
+  --audited         only descriptions someone has checked against the pixels
+  --atlas           include sprite sheets  (default: excluded)
+  --limit <n>       default 20
+  --json            machine-readable output
+
+env:
+  ASSETS_ROOT   where the extracted packs live (default: ./assets/experimental)
+  ASSETS_DB     index location (default: ./index/assets.db)
+`
+
+function cmdSearch(positionals, flags) {
+  const query = positionals.join(" ").trim()
+  const db = openDb({ readonly: true })
+  const { assets: rows, total } = searchAssets(db, {
+    q: query,
+    pack: flags.pack, role: flags.role, style: flags.style,
+    kind: flags.kind ?? "image",
+    tileable: !!flags.tileable,
+    described: flags.described ? true : flags.undescribed ? false : undefined,
+    audited: !!flags.audited,
+    atlas: !!flags.atlas,
+    minSize: flags["min-size"], maxSize: flags["max-size"],
+    limit: flags.limit ?? 20,
+  }, { total: true })
+
+  if (flags.json) { console.log(JSON.stringify(rows, null, 2)); db.close(); return }
+  if (!rows.length) {
+    console.log(`no matches for "${query}"`)
+    console.log(`(index has ${db.prepare("SELECT count(*) c FROM assets").get().c} assets; try fewer filters)`)
+    db.close(); return
+  }
+  for (const r of rows) {
+    const size = r.width ? `${r.width}x${r.height}` : "-"
+    const bits = [r.role, r.style, r.anim_frame].filter(Boolean).join("/")
+    console.log(
+      String(r.id).padStart(6) + "  " +
+      r.pack.padEnd(26).slice(0, 26) + " " +
+      size.padStart(9) + "  " +
+      bits.padEnd(24).slice(0, 24) + " " +
+      r.path,
+    )
+    if (r.observed) console.log(" ".repeat(8) + "↳ " + r.observed.slice(0, 140))
+  }
+  console.log(`
+${rows.length} of ${total.toLocaleString()}. Next: assets sheet <ids> --out sheet.png, then look at it.`)
+  db.close()
+}
+
+function cmdShow(positionals) {
+  const db = openDb({ readonly: true })
+  const row = db.prepare("SELECT * FROM assets WHERE id = ?").get(+positionals[0])
+  if (!row) { console.error(`no asset with id ${positionals[0]}`); process.exitCode = 1; db.close(); return }
+  row.file = assetFile(row.pack, row.path)
+  row.keywords = JSON.parse(row.keywords || "[]")
+  if (row.top_colors) row.top_colors = JSON.parse(row.top_colors)
+  console.log(JSON.stringify(row, null, 2))
+  db.close()
+}
+
+function cmdStats() {
+  const db = openDb({ readonly: true })
+  const one = (q) => db.prepare(q).get()
+  const t = one("SELECT count(*) c FROM assets").c
+  console.log(`index      ${dbPath()}`)
+  console.log(`corpus     ${getMeta(db, "assets_root") ?? assetsRoot()}`)
+  console.log(`built      ${getMeta(db, "built_at") ?? "never"}`)
+  console.log(`packs      ${one("SELECT count(*) c FROM packs").c} cataloged, ${one("SELECT count(*) c FROM packs WHERE installed=1").c} on disk`)
+  console.log(`assets     ${t}  (${one("SELECT count(*) c FROM assets WHERE kind='image'").c} image, ${one("SELECT count(*) c FROM assets WHERE kind='audio'").c} audio)`)
+  console.log(`  atlases  ${one("SELECT count(*) c FROM assets WHERE is_atlas=1").c}`)
+  console.log(`tier 1 structural  ${one("SELECT count(*) c FROM assets WHERE unique_colors IS NOT NULL").c} / ${t}`)
+  console.log(`tier 2 lexical     ${one("SELECT count(*) c FROM assets WHERE role IS NOT NULL").c} / ${t} have a role`)
+  console.log(`tier 3 vision      ${one("SELECT count(*) c FROM assets WHERE observed IS NOT NULL").c} / ${t}   (audited: ${one("SELECT count(*) c FROM assets WHERE audited=1").c})`)
+  const byModel = db.prepare("SELECT vision_model m, count(*) c FROM assets WHERE observed IS NOT NULL GROUP BY m ORDER BY c DESC").all()
+  for (const r of byModel) console.log(`    ${String(r.m ?? "unknown").padEnd(18)} ${r.c}`)
+  console.log("\nby role:")
+  for (const r of db.prepare("SELECT coalesce(role,'(none)') r, count(*) c FROM assets GROUP BY r ORDER BY c DESC").all())
+    console.log(`  ${r.r.padEnd(12)} ${r.c}`)
+  db.close()
+}
+
+const { values: flags, positionals } = parseArgs({
+  allowPositionals: true,
+  strict: false,
+  options: {
+    role: { type: "string" }, pack: { type: "string" }, style: { type: "string" },
+    kind: { type: "string" }, limit: { type: "string" },
+    "min-size": { type: "string" }, "max-size": { type: "string" },
+    packs: { type: "string" }, out: { type: "string" }, dir: { type: "string" },
+    tileable: { type: "boolean" }, atlas: { type: "boolean" },
+    described: { type: "boolean" }, undescribed: { type: "boolean" }, audited: { type: "boolean" },
+    json: { type: "boolean" }, "fts-only": { type: "boolean" },
+    force: { type: "boolean" }, concurrency: { type: "string" },
+    suite: { type: "string" }, all: { type: "boolean" }, redo: { type: "boolean" },
+    submit: { type: "boolean" }, collect: { type: "string" }, model: { type: "string" },
+    "sheets-only": { type: "boolean" }, ingest: { type: "string" }, trim: { type: "boolean" }, to: { type: "string" }, manifest: { type: "boolean" }, flat: { type: "boolean" }, cols: { type: "string" }, cell: { type: "string" }, label: { type: "string" }, validate: { type: "boolean" }, verbose: { type: "boolean" },
+    help: { type: "boolean", short: "h" },
+  },
+})
+
+const cmd = positionals[0]
+const rest = positionals.slice(1)
+
+try {
+  if (flags.help || !cmd) { console.log(USAGE.trim()); process.exit(0) }
+  switch (cmd) {
+    case "build": {
+      const { build } = await import("../tools/index/build.mjs")
+      build({ packs: flags.packs ? flags.packs.split(",") : null, ftsOnly: !!flags["fts-only"] })
+      break
+    }
+    case "analyze": {
+      const { analyze } = await import("../tools/index/analyze.mjs")
+      await analyze({
+        packs: flags.packs ? flags.packs.split(",") : null,
+        force: !!flags.force,
+        concurrency: flags.concurrency ? +flags.concurrency : 12,
+      })
+      break
+    }
+    case "migrate-vision": {
+      const { migrateLegacyVision } = await import("../tools/index/migrate-legacy-vision.mjs")
+      migrateLegacyVision({ dir: flags.dir })
+      const { rebuildFts } = await import("../tools/index/build.mjs")
+      const db = openDb()
+      console.log(`  fts rebuilt: ${rebuildFts(db)} rows`)
+      db.close()
+      break
+    }
+    case "eval": {
+      const m = await import("../tools/index/eval.mjs")
+      if (flags.validate) m.validateSuite({ suite: flags.suite })
+      else m.evaluate({ suite: flags.suite, verbose: !!flags.verbose })
+      break
+    }
+    case "sheet": {
+      const { buildSheet } = await import("../tools/index/sheet.mjs")
+      const ids = rest.join(",").split(/[ ,]+/).filter(Boolean).map(Number)
+      const r = await buildSheet({
+        ids, out: flags.out ?? "sheet.png",
+        cols: flags.cols ? +flags.cols : 8,
+        cell: flags.cell ? +flags.cell : 128,
+        label: flags.label ?? "id",
+        trim: !!flags.trim,
+      })
+      console.log(`  ${r.out}  ${r.count} sprites  ${r.width}x${r.height}`)
+      break
+    }
+    case "install": {
+      const { install } = await import("../tools/index/install.mjs")
+      const idArgs = rest.join(",").split(/[ ,]+/).filter((x) => /^\d+$/.test(x)).map(Number)
+      const packArg = rest.find((x) => !/^\d+$/.test(x))
+      const r = install({
+        ids: idArgs.length ? idArgs : null, pack: packArg, to: flags.to,
+        manifest: !!flags.manifest, flat: !!flags.flat,
+      })
+      console.log(`  copied ${r.copied} files to ${r.dest}${r.missing ? ` (${r.missing} missing from corpus)` : ""}`)
+      if (flags.manifest) console.log(`  wrote  ${r.dest}/assets.manifest.json`)
+      console.log(`  CC0 via kenney.nl -- consider donating: https://kenney.nl/donate`)
+      break
+    }
+    case "enrich": {
+      const m = await import("../tools/index/enrich.mjs")
+      const opts = {
+        all: !!flags.all,
+        packs: flags.packs ? flags.packs.split(",") : null,
+        redo: !!flags.redo,
+      }
+      if (flags.model) opts.model = flags.model
+      if (flags.ingest) await m.ingest({ file: flags.ingest })
+      else if (flags.collect) await m.collect({ batchId: flags.collect })
+      else if (flags.submit || flags["sheets-only"]) await m.submit({ ...opts, sheetsOnly: !!flags["sheets-only"] })
+      else m.plan(opts)
+      break
+    }
+    case "catalog": {
+      const m = await import("../tools/scrape-catalog.mjs")
+      if (rest[0] === "gen") m.generateCatalogTs()
+      else {
+        await m.scrapeCatalog({
+          all: !!flags.all,
+          only: flags.packs ? flags.packs.split(",") : null,
+          limit: flags.limit ? +flags.limit : null,
+        })
+        m.generateCatalogTs()
+      }
+      break
+    }
+    case "render": {
+      const { renderPack } = await import("../tools/render/index.mjs")
+      const r = await renderPack({
+        pack: rest[0],
+        steps: flags.steps ? +flags.steps : 0,
+        size: flags.size ? +flags.size : 512,
+        elevation: flags.elevation ? +flags.elevation : null,
+        margin: flags.margin ? +flags.margin : null,
+        limit: flags.limit ? +flags.limit : 0,
+        only: flags.only ?? "",
+        out: flags.out ?? null,
+      })
+      console.log(`
+  wrote to ${r.out}`)
+      console.log(`  next: assets build --packs ${rest[0]} && assets analyze --packs ${rest[0]}`)
+      break
+    }
+    case "descriptions": {
+      const m = await import("../tools/index/descriptions.mjs")
+      const packs = flags.packs ? flags.packs.split(",") : null
+      if (rest[0] === "import") await m.importDescriptions({ packs })
+      else m.exportDescriptions({ packs })
+      break
+    }
+    case "audit": {
+      const { markAudited } = await import("../tools/index/descriptions.mjs")
+      const ids = rest.join(",").split(/[ ,]+/).filter((x) => /^\d+$/.test(x)).map(Number)
+      const paths = rest.filter((x) => x.includes(":"))
+      markAudited({ ids, paths })
+      break
+    }
+    case "search": cmdSearch(rest, flags); break
+    case "show":   cmdShow(rest); break
+    case "stats":  cmdStats(); break
+    default:
+      console.error(`unknown command: ${cmd}\n`)
+      console.log(USAGE.trim())
+      process.exitCode = 1
+  }
+} catch (err) {
+  console.error(`error: ${err.message}`)
+  process.exitCode = 1
+}
