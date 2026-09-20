@@ -19,9 +19,9 @@ import { buildSheet } from "./sheet.mjs"
  */
 
 const MODEL = "claude-opus-5"
-const PER_SHEET = 64
-const CELL = 128
-const COLS = 8
+export const PER_SHEET = 64
+export const CELL = 128
+export const COLS = 8
 
 // Cost model. Anthropic image tokens are approximately (w * h) / 750.
 const PRICES = {
@@ -31,7 +31,7 @@ const PRICES = {
 }
 const BATCH_DISCOUNT = 0.5
 
-const SCHEMA = {
+export const SCHEMA = {
   type: "object",
   properties: {
     sprites: {
@@ -61,7 +61,7 @@ const SCHEMA = {
   additionalProperties: false,
 }
 
-const PROMPT = [
+export const PROMPT = [
   "This is a contact sheet of individual game sprites on a grey grid.",
   "Each cell holds one sprite with its numeric id printed underneath.",
   "",
@@ -82,7 +82,7 @@ function isOpaqueName(p) {
   return /^[a-z]{0,6}[_-]?[0-9]{2,}$/.test(stem) || words.length === 0
 }
 
-function targets(db, { all = false, packs = null, redo = false }) {
+export function targets(db, { all = false, packs = null, redo = false }) {
   let sql = "SELECT id, pack, path, width, height FROM assets WHERE kind='image' AND is_atlas=0"
   const params = []
   if (!redo) sql += " AND observed IS NULL"

@@ -143,6 +143,74 @@ falsifiable oracle than an unverified full-catalog run would have. Running
 follow whenever it's wanted; both commands are idempotent (skip
 already-processed rows/packs unless `--force`) so it can be done incrementally.
 
+## Vision tier via RunPod + Qwen2.5-VL — tried 2026-09-20, quality did not clear the bar
+
+Explored as an alternative to `enrich.mjs`'s Claude Batch API path
+specifically because that path needs a separate `ANTHROPIC_API_KEY` billing
+relationship, and doing descriptions by hand in a Claude Desktop session
+draws down that subscription's usage allocation instead — both explicitly
+ruled out for this work. A self-hosted pod touches neither.
+
+**What shipped**: `assets enrich --runpod <url> [--smoke-test] [--all]
+[--concurrency N] [--limit N]` (`tools/index/enrich-runpod.mjs`), reusing
+`enrich.mjs`'s contact-sheet building, prompt, schema, target-selection, and
+`ingest()` unchanged — only the inference backend differs (a plain
+OpenAI-compatible HTTP endpoint instead of the Anthropic SDK).
+
+**Infrastructure note, not a code issue**: the RunPod MCP connection wired
+into this environment can read everything (pods, templates, GPU catalog) but
+cannot write anything — confirmed with a zero-cost test (`create-template`,
+no compute, no billing) that got the identical 403 a real `create-pod` call
+did. Whatever credential backs that connection is read-only at the RunPod API
+level, independent of what the account's own API keys show in its console.
+Worked around by driving the RunPod console directly through a browser
+session instead of the MCP tool.
+
+**Real numbers, from actually running it**, not modeled:
+- One RTX 4090 pod (Secure Cloud, $0.74/hr), `vllm/vllm-openai:latest`
+  serving `Qwen/Qwen2.5-VL-7B-Instruct`. Cold start (image pull + weight
+  download + `torch.compile`) took ~3 minutes.
+- First smoke test at `enrich.mjs`'s own 64-sprites/sheet default: **complete
+  failure** — 56/56 returned entries were the exact same text ("ladder"),
+  verbatim, on a sheet that actually contained hearts, bells, crosshairs, and
+  spiral icons. Root cause confirmed directly (not inferred): recomputing the
+  raw model output showed it repeating one earlier answer verbatim after
+  roughly the fifth cell — an autoregressive repetition loop, not a
+  vision-perception failure (an earlier, unrelated bug — this environment's
+  `ASSETS_ROOT` not set for one run — had separately produced a *different*,
+  totally-empty-grid failure first; that one was fixed by setting it
+  correctly, and is unrelated to the repetition finding).
+- Adding `temperature: 0.3, repetition_penalty: 1.15` and dropping to
+  16 sprites/sheet (`RUNPOD_PER_SHEET`/`RUNPOD_COLS` in
+  `tools/index/enrich-runpod.mjs`) fixed the total collapse: smoke test came
+  back 16/16 returned, 16/16 real ids, non-degenerate.
+- Full run: 3,000 images, 188/188 sheets succeeded, ~6.5 minutes wall-clock
+  at concurrency 8, 2,878 descriptions ingested (tagged
+  `vision_model = 'qwen2.5-vl-7b-instruct (runpod)'`, `audited = 0` —
+  correctly *not* claiming to be verified).
+- **Quality check on the result, by hand, not by the aggregate counts**: 25
+  random rows checked against their actual filenames/content. ~4-5 clear
+  errors (`giraffe.png` → "monkey"; `tileSnow_slopeRight.png` (a slope) →
+  "ladder"; `playerGrey_switch2.png` (a player frame) → "ladder";
+  `chicken.png` correctly identified as a chicken but "Used as: ladder").
+  That's a ~16-20% error rate in this sample. Corpus-wide, "ladder" alone
+  still accounts for 164/2,847 rows (5.8%) — the same failure mode as the
+  original total collapse, reduced from *all* output to a *recurring
+  minority*, not eliminated.
+- `assets eval` unchanged (94.4% recall@10) — uninformative here, not a clean
+  bill of health: the eval suite's 304 hand-labeled queries don't happen to
+  touch this batch of newly-described images.
+
+**Verdict**: don't scale this to the remaining ~48,600 undescribed images at
+this configuration. The pipeline itself (pod → sheets → structured output →
+DB ingest) works cleanly end-to-end and is worth keeping for a future attempt
+(larger model, different prompt, an explicit "say unclear rather than guess"
+instruction), but the 2,878 rows already ingested should be treated as an
+unaudited, noisy signal only — which is exactly what their `audited = 0` tag
+already says, so nothing downstream is misrepresenting them. Pod was
+terminated after this run (confirmed removed from the account's pod list);
+total cost for the whole exploration was under $1.
+
 ## Open work
 
 See `KICKOFF.md` §4 for the phase breakdown (geometry/WFC adjacency [done,

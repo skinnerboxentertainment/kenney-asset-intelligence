@@ -20,6 +20,9 @@ assets -- query the Kenney asset index
   assets show    <id>                         full record for one asset
   assets migrate-vision [--dir <path>]        import legacy Codex descriptions
   assets enrich  [--submit] [--collect <id>]  vision tier (default: plan only)
+                 [--runpod <url> [--smoke-test] [--all] [--concurrency N] [--limit N]]
+                                              vision tier via a self-hosted
+                                              Qwen2.5-VL pod instead of Claude
   assets descriptions [import] [--packs a,b]  export/import descriptions as
                                               committed JSON (the one tier
                                               that cannot be regenerated)
@@ -133,6 +136,7 @@ const { values: flags, positionals } = parseArgs({
     force: { type: "boolean" }, concurrency: { type: "string" },
     suite: { type: "string" }, all: { type: "boolean" }, redo: { type: "boolean" },
     submit: { type: "boolean" }, collect: { type: "string" }, model: { type: "string" },
+    runpod: { type: "string" }, "smoke-test": { type: "boolean" },
     "sheets-only": { type: "boolean" }, ingest: { type: "string" }, trim: { type: "boolean" }, to: { type: "string" }, manifest: { type: "boolean" }, flat: { type: "boolean" }, cols: { type: "string" }, cell: { type: "string" }, label: { type: "string" }, validate: { type: "boolean" }, verbose: { type: "boolean" },
     help: { type: "boolean", short: "h" },
   },
@@ -218,6 +222,18 @@ try {
       break
     }
     case "enrich": {
+      if (flags.runpod) {
+        const m = await import("../tools/index/enrich-runpod.mjs")
+        if (flags["smoke-test"]) await m.smokeTest({ endpoint: flags.runpod })
+        else await m.run({
+          endpoint: flags.runpod,
+          packs: flags.packs ? flags.packs.split(",") : null,
+          all: flags.all === undefined ? true : !!flags.all,
+          concurrency: flags.concurrency ? +flags.concurrency : 4,
+          limit: flags.limit ? +flags.limit : null,
+        })
+        break
+      }
       const m = await import("../tools/index/enrich.mjs")
       const opts = {
         all: !!flags.all,
