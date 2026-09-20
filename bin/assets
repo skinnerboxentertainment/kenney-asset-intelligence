@@ -12,6 +12,7 @@ assets -- query the Kenney asset index
   assets build   [--packs a,b] [--fts-only]   build/refresh the index
   assets analyze [--packs a,b] [--force]      structural pass (sharp)
   assets geometry [--packs a,b] [--force]     silhouette/component extraction
+  assets wfc-adjacency [--packs a,b] [--force] WFC tile-adjacency extraction
   assets render  <pack> [--steps N]           render cardinal views of 3D
                  [--size 512] [--elevation D]  models (needs Blender)
   assets sheet   <ids> --out f.png            composite a contact sheet
@@ -160,6 +161,15 @@ try {
     case "geometry": {
       const { runGeometry } = await import("../tools/index/geometry.mjs")
       await runGeometry({
+        packs: flags.packs ? flags.packs.split(",") : null,
+        force: !!flags.force,
+        concurrency: flags.concurrency ? +flags.concurrency : 12,
+      })
+      break
+    }
+    case "wfc-adjacency": {
+      const { runWfcAdjacency } = await import("../tools/index/wfc-adjacency.mjs")
+      await runWfcAdjacency({
         packs: flags.packs ? flags.packs.split(",") : null,
         force: !!flags.force,
         concurrency: flags.concurrency ? +flags.concurrency : 12,
